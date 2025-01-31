@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-one);
+  border-radius: 0.25vw;
+  opacity: 0.8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Poppins";
+}
+:root {
+  --accent: #0b0b0b;
+  --tertiary: rgba(255, 255, 255, 1);
+  --tertiary-highlight: #cccccc;
+  --tertiary-dark: rgb(190, 190, 190);
+  --alert: rgb(240, 56, 56);
+  --alert-light: rgb(255, 113, 113);
+  --alert-two: rgb(255, 255, 152);
+  --secondary-one: rgb(63, 75, 59);
+  --secondary-two: #44633f;
+  --secondary-three: rgb(90, 147, 103);
+  --secondary-four: rgb(92, 171, 125);
+  --secondary-five:rgb(74,219,200); /*#66915e*/
+  --background: #fffff7;
+  --background-two: #e0e0cb;
+  --background-three: rgb(233, 233, 197);
+}
+body {
+  overflow-x: hidden;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  background: var(--background-three);
+}

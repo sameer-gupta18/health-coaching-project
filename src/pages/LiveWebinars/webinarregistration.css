@@ -1,0 +1,100 @@
+.webinar-registration-page-container{
+    padding:1vw 2vw
+}
+.webinars-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.webinars-header h1 {
+  font-size: 2.7vw;
+  color: var(--secondary-one);
+}
+.webinars-header hr {
+  height: 0.2vh;
+  background: var(--secondary-one);
+  border-radius: 0.25vh;
+  width: 60vw;
+  border: none;
+}
+.webinar-registration-container {
+  width: 100vw;
+  padding: 2vw 4vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-content: space-between; */
+}
+.webinar-registration-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.webinar-registration-form-container {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.webinar-registration-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 0.5vw;
+}
+.webinar-registration-form-container form p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  width: 100%;
+}
+
+.webinar-registration-form-container form p:not(.registration-textarea-title) {
+  display: grid;
+  grid-template-columns: 30% auto;
+  align-items: center;
+}
+
+.webinar-registration-form-container form p input,
+.webinar-registration-form-container form textarea {
+  padding: 0.5vw 1vw;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.1vw solid black;
+  border-radius: 0.3vw;
+}
+.webinar-registration-form-container form p input {
+  font-size: 1.6vw;
+}
+.webinar-registration-form-container form textarea {
+  height: 6vw;
+  padding: 0.7vw 1vw;
+  font-size: 1.1vw;
+}
+.webinar-registration-form-container form .registration-textarea-title {
+  margin: 1vw 0vw 0.5vw 0vw;
+}
+
+.webinar-registration-form-container form input[type="submit"]{
+    width: 50%;
+    margin-top: 0.5vw;
+    padding: 0.7vw;
+    font-size: 1.3vw;
+    border-radius: 50vw;
+    border: none;
+    background: var(--secondary-two);
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    cursor:pointer
+}
+
+.webinar-registration-form-container form input[type="submit"]:hover{
+  scale:1.01
+}
+
+.webinar-registration-image-container img{
+    width:35vw;
+    height:30vw;
+    object-fit: cover;
+    border-radius: 0.5vw;
+}

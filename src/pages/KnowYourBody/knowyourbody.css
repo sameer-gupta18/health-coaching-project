@@ -1,0 +1,167 @@
+.know-your-body-container {
+  padding: 0vw 2vw;
+}
+.know-your-body-cards-container form {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 4vw;
+}
+.know-your-body-cards-container form .form-know-your-body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.know-your-body-card-container {
+  padding: 2vw;
+  background: var(--secondary-five);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.1);
+  width: 22vw;
+  height: 40vh;
+}
+.know-your-body-cards-container svg {
+  font-size: 7vw;
+  color: var(--secondary-one);
+  margin-bottom: 1vw;
+}
+.know-your-body-card-container h2 {
+  font-size: 1.8vw;
+}
+.know-your-body-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.7vw;
+}
+.know-your-body-input select {
+  background: transparent;
+  border: none;
+  border-bottom: solid;
+  padding: 0.1vw 0vw;
+  outline: none;
+}
+.know-your-body-input input[type="number"] {
+  border: none;
+  outline: none;
+  padding: 0.2vw 0.5vw;
+  width: 40%;
+  font-size: 1vw;
+}
+.know-your-body-gender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5vw;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.know-your-body-gender-container input[type="button"] {
+  padding: 1vw;
+  width: 7vw;
+  border: none;
+  outline: none;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
+  color: var(--tertiary);
+  font-weight: bold;
+  cursor: pointer;
+}
+.know-your-body-gender-container input[type="button"]:hover {
+  scale: 1.01;
+}
+.age-input-know-your-body {
+  border: none;
+  outline: none;
+  padding: 0.2vw 0.5vw;
+  width: 30%;
+  font-size: 2vw;
+  overflow: hidden;
+}
+
+#submit-know-your-body {
+  width: 30vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  background: var(--secondary-three);
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+#submit-know-your-body:hover {
+  scale: 1.01;
+}
+.know-your-body-results-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+.bmi-result-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2vw
+}
+.bmi-result-number-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 2vw;
+}
+.bmi-result-number-container p{
+  font-size: 1.2vw;
+  color:var(--secondary-one)
+}
+.bmi-result-number-container h1{
+font-size: 7vw;
+letter-spacing: 0.2vw;
+}
+.bmi-result-comment-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40vw;
+  row-gap: 0.3vw;
+}
+.bmi-result-comment-container p{
+  text-align: center;
+  font-size: 1vw;
+}
+.bmi-result-comment-container h3{
+  font-size: 2.3vw;
+  text-transform: uppercase;
+  color:var(--secondary-one)
+}
+.bmi-results-ai-insights{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0vw 2vw;
+  gap: 0.5vh;
+  margin: 2vw 0vw;
+}
+.bmi-results-ai-insights h2{
+  font-size: 2.5vw;
+  color:var(--secondary-three)
+}

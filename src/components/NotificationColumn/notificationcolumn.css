@@ -1,0 +1,77 @@
+.notifications-container {
+  width: 20vw;
+  height: 90vh;
+  max-height: calc(100vh - 50px);
+  overflow-y: scroll;
+  background: rgba(92, 171, 125, 0.7);
+}
+.notifications-container h1 {
+  font-size: 2vw;
+  margin: 0.5vw 0vw;
+  width: 100%;
+  text-align: center;
+}
+.notifications-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  list-style: none;
+}
+.notifications-list li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vw 1vw;
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent);
+}
+.notifications-list li h3,
+.notifications-list li p,
+.notifications-list li button,
+.notifications-list li a {
+  text-decoration: none;
+  color: var(--accent);
+}
+.notifications-list li h3 {
+  font-size: 1.3vw;
+  margin-bottom: 0.3vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notifications-list li p {
+  font-size: 0.9vw;
+}
+.notifications-list li:nth-child(2n) {
+  background: rgba(92, 171, 125, 1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.time-stamp-admin-notification {
+  font-size: 0.8vw !important;
+  opacity: 0.6 !important;
+  margin-top: 0.2vw;
+}
+.notifications-list li button {
+  background: transparent;
+  width: 1vw;
+  height: 1.5vw;
+  outline: none;
+  border: none;
+  color: var(--accent);
+  font-weight: bold;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+  font-size: 1vw;
+}
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

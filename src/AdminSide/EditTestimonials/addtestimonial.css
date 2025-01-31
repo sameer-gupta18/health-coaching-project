@@ -1,0 +1,65 @@
+.admin-addtestimonial-container h1 {
+  font-size: 2.5vw;
+  color: var(--accent);
+  padding-bottom: 0.5vw;
+}
+.admin-addtestimonial-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  row-gap: 0.2vw;
+}
+.admin-addtestimonial-container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vw;
+}
+.admin-addtestimonial-container form .add-testimonial-input {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 1.5vw;
+}
+.add-testimonial-input p {
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+.add-testimonial-input input {
+  padding: 0.5vw 0.7vw;
+  border: 0.1vw solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.3vw;
+  width: 50%;
+  font-size: 1.2vw;
+}
+.add-testimonial-input textarea {
+  font-size: 1.1vw;
+}
+.add-testimonial-file-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2vw;
+  margin: 1vw 0vw;
+}
+.add-testimonial-file-container img {
+  width: 20vw;
+  height: 15vw;
+  object-fit: cover;
+}
+.add-testimonial-file-container input {
+  font-size: 1.1vw;
+}
+.admin-addtestimonial-container input[type="submit"] {
+  font-size: 1.2vw;
+  padding: 1vw;
+  border: 0.1vw solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-weight: bold;
+  background: var(--secondary-two);
+  color: white;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.admin-addtestimonial-container input[type="submit"]:hover {
+  scale: 1.01;
+}

@@ -1,0 +1,144 @@
+.about-us-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw;
+  gap: 4vw;
+  margin-bottom: 2vw;
+}
+.about-me-journey-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5vw;
+  position: relative;
+}
+.about-me-journey-container h1 {
+  font-size: 4vw;
+  color: var(--secondary-one);
+}
+.about-me-journey-container p {
+  font-size: 1vw;
+  width: 90%;
+  line-height: 1.8vw;
+  color: var(--accent);
+  opacity: 0.9;
+  max-width: 45vw;
+}
+.about-me-journey-container::before {
+  content: "";
+  position: absolute;
+  height: 140%;
+  aspect-ratio: 1;
+  background: var(--secondary-three);
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.about-me-image-container img,
+.about-me-image-container {
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  object-fit: cover;
+}
+.about-me-image-container::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 0.3vw solid var(--secondary-one);
+  position: absolute;
+  transform: translate3d(0.7vw, -1vw, 0px);
+}
+.about-me-qualifications-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.about-me-qualifications-container h1 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  width: 60vw;
+  text-align: center;
+  background: rgba(63, 75, 59, 0.7);
+  color: var(--tertiary);
+  padding: 1vw;
+}
+.about-me-qualification-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 2vw;
+}
+.qualification-card img {
+  width: 20vw;
+  height: 20vw;
+  margin-bottom: 1vw;
+}
+.qualification-card {
+  background: var(--secondary-four);
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5vw;
+  border-radius: 1vw;
+}
+.qualification-card h3 {
+  font-size: 1.3vw;
+  color: var(--accent);
+}
+.qualification-card p {
+  font-size: 1vw;
+  opacity: 0.6;
+}
+.mission-container-vector {
+  width: 100vw;
+  height: 1vw;
+}
+.v-u {
+  margin-top: 1vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(63, 75, 59, 0) 0%,
+    rgb(63, 75, 59) 70%
+  );
+}
+.v-d {
+  margin-bottom: 2vw;
+  background: linear-gradient(
+    to top,
+    rgba(63, 75, 59, 0) 0%,
+    rgb(63, 75, 59) 70%
+  );
+}
+.about-me-mission-container {
+  background: var(--secondary-one);
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 4vw;
+  gap: 4vw;
+  align-items: center;
+}
+#mission-title {
+  color: var(--secondary-five);
+  opacity: 0.4;
+  font-weight: bold;
+  font-size: 11vw;
+  line-height: 10vw;
+}
+.about-me-mission-container p:not(#mission-title) {
+    text-align: center;
+    font-size: 1.3vw;
+    color:var(--tertiary);
+    opacity: 0.8;
+    font-weight: bold;
+    font-style: italic;
+}

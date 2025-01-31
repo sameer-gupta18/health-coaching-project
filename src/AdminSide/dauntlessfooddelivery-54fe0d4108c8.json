@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dauntlessfooddelivery",
+  "private_key_id": "54fe0d4108c8a407f9f1b91de03b966094c71505",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDZDyHGFfMT9Dm2\nSPzUsvS2dnUEcdxmGpiuRVSwTn7DJpKHC3QFNG0crjjmH2OSpOzuKdftOT85Zion\n4Nk0dbbxHR68FQlOQHwQLW8hv0MAFq/+SEw2DS1XCWkXpe0Xc9O6lTstPhP3636n\nVBmRKsITNo17Bon9mNTb1vHBJc31/LpzOt2j/OfJIhlCctZjLAd8VuJhp5RWCALN\njUWLdVz8ZnUKO2wBdyzLXYvHLlEkd08kD1UIrHnHG2o4Tt+aTxsvisYP3fhcOjcd\nvrZsdty7gmd8+jrTdllUJPopO0366XUrGMYyHbRml7ZqX5PJgnfYox7+P224jy2U\nQsqPprQDAgMBAAECggEAAPeUSvGmF5yq9Sj2F2yEsptsggyP0tSjgYNFkVOINQ5i\n8L8YUT2ejtYn4r6ZDvo1JAqDr8blhTfzUCIsVZOAsSpUDLp7RCH9a4UITbowbjur\npRJlZIhCf3THRxeyKryVYOtxTA5OwHgIJG63fnIWU0eW8clhrAOWTzRx905X0JTB\nlXaXO841eVMv4ga6g9l1vdJ6ZDfAaewjKOxMYe2NvfSQrAgliyuZ6yrTQ2J2f70+\nRzb+CwBWjZ5TFl4s5QDDyJX0pUgOSCLVZdZo7B2DUWeleGAaWVC5Eu2NEgvEqJnO\nw36T2/sQP57LF3XNw/A1B5ZCF4SvNH4OVdsDnQFoYQKBgQD4DRSEc+CuJTqWoErU\nfRn5Ix27vWuVD1Flx57GLiP1z+kg64yhplNCxPbu1V9RIwuA2RxMd3dBvaS4IR6W\nDSt/Kg/Vnw8pNE5KQ3GCxbGQFEk9oG16iuH8I43qL5jacDz3Iz0p5VXUA5VRagM2\nGjaUlhdFA/raouq9JlZdiEovRwKBgQDgA84Q8zqqRKPSOisKKLj9cZQkRy1qhVp8\niCj4JwSKrDhlIXjOdjD8o46QfJG7cd3DXuBlgRfNHbw2vmkLJfxYNQ0ltlRzz0XC\nLqJ0EVkVfgyPioNZV2uxqQdIcCHVaPMvvQnEI6SbZ1sx7gqiS2AUiU7DYQoTzmZX\n9YHuw9YLZQKBgQDZI8okMLQsfhaNqQAYhvLnrx/mKuk0cVZV/Ks23UlJc5mm4cwX\n7dvRBU8Mv+hSxJTbVDN7lNDm0baSIRv/SsQa65006aqB7XHjfKqvSZQohjmfIwLz\nVQSCjjU7HjN2dO5JgaWXOVUq5YAe5uiswcGpzMHN/q/oGNnYfuj3s8kNHQKBgQCG\n0KNmPgszR2XT8h/O2F0kYgNGpfNmJOUlBwio90pbbnPuIOvETQsEMCZvPBi0Vz2g\nA2xGih9Z2ShZRdSP2gd4ykykQoumurn/t/MaqQoUziwfArwzu1HbtJ7mcF1cQvH/\n6+OBv/WjdNtEPD74Fya2lT/qg27+JnwfOWg92mvppQKBgQDLNV1GB4XNkJj5eDoC\nrzgZ38qD8ZewgF19F7E+w/K5y9M9F75S0FuHfKdpW3MhYFJ7Fex1GAlIsXe3bRmr\neC7VLK1MrEDILjSBZodih1IB+uyuVGWJM5p++aRKTkVoHHMyXxxPxVnIFTs4uZco\ndKVMA1c3wKwxwczvge6+QpOiVg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "prakrutibyrama@dauntlessfooddelivery.iam.gserviceaccount.com",
+  "client_id": "106946054386548541947",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prakrutibyrama%40dauntlessfooddelivery.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

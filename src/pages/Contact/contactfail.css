@@ -1,0 +1,23 @@
+.webinar-cancellation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  max-height: calc(100vh - 50px);
+  row-gap: 0.2vw;
+  padding: 1vw;
+}
+
+.webinar-cancellation-container svg {
+  font-size: 14vw;
+  color: var(--alert);
+}
+.webinar-cancellation-container h2 {
+  font-size: 2.5vw;
+  color: var(--secondary-one);
+}
+.webinar-cancellation-container p {
+  font-size: 1.2vw;
+  margin-top: 0.5vw;
+}

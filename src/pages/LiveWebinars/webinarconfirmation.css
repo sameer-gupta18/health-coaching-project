@@ -1,0 +1,60 @@
+.webinar-confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  max-height: calc(100vh - 50px);
+  row-gap: 0.2vw;
+  padding: 1vw;
+}
+
+.webinar-confirmation-container svg {
+  font-size: 12vw;
+  color: var(--secondary-three);
+}
+.webinar-confirmation-container h2 {
+  font-size: 1.8vw;
+}
+.webinar-confirmation-container h1 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: var(--secondary-one);
+  text-align: center;
+}
+.webinar-confirmation-container p {
+  font-size: 1.2vw;
+}
+.information-container-webinar-confirmation {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 2vw;
+  margin: 0.5vw 0vw;
+}
+.information-container-webinar-confirmation p {
+  padding: 0.5vw 1vw;
+  background: var(--secondary-five);
+  box-shadow: 0px 0px 0.5vw rgba(0, 0, 0, 0.05);
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+.webinar-confirmation-container a{
+    padding: 1vw;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:blueviolet;
+    border-radius: 0.5vw;
+    margin: 0.5vw 0vw;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.webinar-confirmation-container a:hover{
+    scale:1.01
+}
+.see-you-soon-confirmation{
+    scale:0.8
+}

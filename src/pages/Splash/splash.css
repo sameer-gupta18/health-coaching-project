@@ -1,0 +1,34 @@
+.splash-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2vw;
+  background: radial-gradient(#e9e9c5, #cdcda9);
+}
+.splash-container svg {
+  color: var(--alert);
+  font-size: 9vw;
+  animation: scale-up infinite 2s ease-in-out;
+}
+@keyframes scale-up {
+  0% {
+    scale: 1;
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    scale: 1.1;
+    transform: rotateZ(5deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotateZ(-5deg);
+  }
+}
+.splash-container p {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: var(--secondary-one);
+}

@@ -1,0 +1,11 @@
+.admin-container {
+  display: flex;
+  height: 90vh;
+  max-height: calc(100vh - 50px);
+}
+.admin-container-body {
+  width: 60vw;
+  height: 90vh;
+  max-height: calc(100vh - 50px);
+  overflow-y: scroll;
+}

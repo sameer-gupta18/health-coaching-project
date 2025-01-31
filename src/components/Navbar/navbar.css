@@ -1,0 +1,87 @@
+.navbar-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar {
+  width: 100%;
+  height: 10vh;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  list-style: none;
+}
+.navbar-container ul a {
+  text-decoration: none;
+  font-size: 1.15vw;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05);
+}
+.navbar-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo{
+  max-width: 10vw;
+}
+.navbar-container ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item-underlined::before {
+  content: "";
+  position: absolute;
+  transform: translate(0px, 2.5vw);
+  width: 0px;
+  display: none;
+  height: 0.15vw;
+  border-radius: 0.075vw;
+  background: var(--secondary-two);
+}
+.nav-item-underlined:hover::before {
+  width: 3.5vw;
+  display: inline-block;
+  animation: open-underline 0.3s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes open-underline {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 3.5vw;
+  }
+}
+.navbar-container ul :not(.consultation-nav) a {
+  color: var(--accent);
+}
+.navbar-container ul :not(.consultation-nav) a:hover {
+  color: var(--secondary-two);
+}
+.navbar-container ul a:active {
+  color: var(--secondary-four);
+}
+.consultation-nav a {
+  background: var(--secondary-two);
+  padding: 8% 2vw;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: var(--tertiary);
+  font-weight: bold;
+}
+.consultation-nav a:hover {
+  background: var(--secondary-five);
+  color: var(--accent);
+}

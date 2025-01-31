@@ -1,0 +1,281 @@
+{
+  "webinars": [
+    {
+      "id": "6d7a",
+      "name": "Webinar 1: Introduction to Food",
+      "register_timestamp": "26/01/2025 | 23:00",
+      "description": "Dive deep into the world of food",
+      "tags": {
+        "paid": true,
+        "offline": true
+      },
+      "date": "2025-01-29",
+      "time": "10:00",
+      "location": "Zoom",
+      "link": "",
+      "cover_image": "http://localhost:5000/upload/aa2f9274fc0fa1cf284a691785746d01",
+      "participants": [
+        {
+          "name": "John Abrams",
+          "email": "johnabrams@gmail.com",
+          "phone_number": "99932398",
+          "descriptor": "Looking to decrease weight",
+          "time_stamp": "27/01/2025 | 00:49"
+        }
+      ],
+      "price": "2000"
+    },
+    {
+      "id": "6d7b",
+      "name": "Webinar 1: Introduction to Food",
+      "register_timestamp": "26/01/2025 | 23:00",
+      "description": "Dive deep into the world of food",
+      "tags": {
+        "paid": true,
+        "offline": true
+      },
+      "date": "2025-01-31",
+      "time": "19:00",
+      "location": "Zoom",
+      "link": "",
+      "cover_image": "http://localhost:5000/upload/03a9269da2c7817088a593d01c653988",
+      "participants": [
+        {
+          "name": "Sameer Gupta",
+          "email": "gamingwithsam0@gmail.com",
+          "phone_number": "9971677663",
+          "descriptor": "I want to increase weight",
+          "time_stamp": "25/01/2025 | 00:00"
+        },
+        {
+          "name": "Sameer Gupta",
+          "email": "gamingwithsam0@gmail.com",
+          "phone_number": "9971677663",
+          "descriptor": "I want to increase weight",
+          "time_stamp": "25/01/2025 | 00:00"
+        },
+        {
+          "name": "lkdfjdslkj",
+          "email": "kjdlskjfkj@Gmail.com",
+          "phone_number": "93849839",
+          "descriptor": "klfjsjdkfjd",
+          "time_stamp": "27/01/2025 | 09:19"
+        }
+      ],
+      "price": "2000",
+      "update_timestamp": "27/01/2025 | 09:19"
+    },
+    {
+      "id": "ce62",
+      "name": "dsdlkj",
+      "register_timestamp": "26/01/2025 | 23:00",
+      "description": "lsdjfkadjlk",
+      "tags": {
+        "paid": false,
+        "offline": false
+      },
+      "date": "2025-01-29",
+      "time": "10:00",
+      "location": "3334",
+      "link": "https://www.google.com",
+      "cover_image": "http://localhost:5000/upload/69e33a664ff6ff8a3504405839d9f293",
+      "participants": [
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        },
+        {
+          "name": "Sameer",
+          "email": "hH@gmail.com",
+          "phone_number": "929382938",
+          "descriptor": "jkdjsljdfksdf",
+          "time_stamp": "26/01/2025 | 23:07"
+        }
+      ],
+      "price": "",
+      "update_timestamp": "27/01/2025 | 00:48"
+    },
+    {
+      "id": "d68f",
+      "name": "Nutrigenetics",
+      "register_timestamp": "27/01/2025 | 01:01",
+      "description": "Dive Into the world of nutrigenetics: how your genes define your body.",
+      "tags": {
+        "paid": true,
+        "offline": false
+      },
+      "date": "2025-02-11",
+      "time": "18:00",
+      "location": "Zoom",
+      "link": "https://www.youtube.com",
+      "cover_image": "http://localhost:5000/upload/41abe18cb1c491d5424894b083bf15ec",
+      "participants": [
+        {
+          "name": "Sameer Gupta",
+          "email": "gamingwithsam0@gmail.com",
+          "phone_number": "09971677663",
+          "descriptor": "etet",
+          "time_stamp": "27/01/2025 | 01:01"
+        },
+        {
+          "name": "Sameer Gupta",
+          "email": "gamingwithsam0@gmail.com",
+          "phone_number": "09971677663",
+          "descriptor": "221132",
+          "time_stamp": "27/01/2025 | 21:52"
+        }
+      ],
+      "price": "1100",
+      "update_timestamp": "27/01/2025 | 22:37"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "f2cb",
+      "time_stamp": "15/01/2025 | 00:41",
+      "name": "JJ",
+      "phone_no": "928374668",
+      "description": "I have a possible webinar at XXX place at XX time"
+    },
+    {
+      "id": "6805",
+      "time_stamp": "21/01/2025 | 11:19",
+      "name": "Sameer",
+      "phone_no": "9283982398329",
+      "description": "lkfjskldkjflkdsjf"
+    },
+    {
+      "id": "e92d",
+      "time_stamp": "21/01/2025 | 12:08",
+      "name": "sameer",
+      "phone_no": "292939393",
+      "description": "jdjjdjdj"
+    }
+  ],
+  "consultations": [],
+  "testimonials": [
+    {
+      "name": "Sameer Gupta",
+      "age": 17,
+      "description": "Client",
+      "testimonial": "Very good service! I was very underweight before, but now I am healthy thanks to Rama.",
+      "photo": "https://t4.ftcdn.net/jpg/05/50/61/75/360_F_550617518_Eu3U6kTl3mODPvnfTMFHQ88z1y5KNfNQ.jpg",
+      "id": "0311"
+    },
+    {
+      "name": "Meghna Gupta",
+      "age": 25,
+      "description": "Client",
+      "testimonial": "Very good service! I was very underweight before, but now I am healthy thanks to Rama.",
+      "photo": "http://localhost:5000/upload/9ba3382691bc51b92a5a69cc2471ce32",
+      "id": "2680"
+    },
+    {
+      "id": "16c8",
+      "name": "John",
+      "age": "55",
+      "description": "Client",
+      "testimonial": "This was one of the best services I have ever received. Thanks!",
+      "photo": "http://localhost:5000/upload/f749e1d09354deda80d86207c685804a"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "9c11",
+      "time_stamp": "27/01/2025 | 18:53",
+      "title": "Added New Leave Day",
+      "description": "Successfully added an off day for 18th February, 2025",
+      "route": "/admin/leave-day/add"
+    },
+    {
+      "id": "85a0",
+      "time_stamp": "27/01/2025 | 21:52",
+      "title": "New Webinar Registree",
+      "description": "Sameer Gupta (09971677663) has registered for 'Nutrigenetics' to be hosted on 11th February, 2025 at 6:00 PM",
+      "route": "/admin/webinar/view"
+    },
+    {
+      "id": "eb1b",
+      "time_stamp": "27/01/2025 | 22:37",
+      "title": "Updated Webinar",
+      "description": "Nutrigenetics has been updated: Date: 11th February, 2025. Time: 6:00 PM",
+      "route": "/admin/webinar/view"
+    },
+    {
+      "id": "59b4",
+      "time_stamp": "28/01/2025 | 11:06",
+      "title": "New Consultation",
+      "description": "Aarav (110) wants a consultation on 13th February, 2025 at 8:00 PM",
+      "route": "/admin/dashboard"
+    },
+    {
+      "id": "4255",
+      "time_stamp": "28/01/2025 | 11:07",
+      "title": "Updated Consultation",
+      "description": "Aarav's consultation has been updated: Aarav (17) wants a consultation on 13th February, 2025 at 8:00 PM",
+      "route": "/admin/dashboard"
+    }
+  ],
+  "offdays": [
+    {
+      "id": "2f19",
+      "date": "2025-01-29"
+    },
+    {
+      "id": "eb04",
+      "date": "2025-02-18"
+    }
+  ],
+  "consumer-notifications": [
+    {
+      "content": "Hello",
+      "route": "/bmi-calculator",
+      "id": "1"
+    }
+  ]
+}

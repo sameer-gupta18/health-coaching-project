@@ -1,0 +1,101 @@
+.notificationcontrol-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vw;
+  padding: 0.5vw 1vw;
+}
+.notificationcontrol-container h1 {
+  font-size: 2.5vw;
+}
+.notificationcontrol-container h3 {
+  font-size: 1.5vw;
+}
+.notificationcontrol-container p {
+  font-size: 1.2vw;
+  padding: 0.2vw;
+  border: 0.1vw solid rgba(0, 0, 0, 0.2);
+}
+.current-popup-edit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3vw;
+}
+.notificationcontrol-container h2 {
+  font-size: 1.9vw;
+  color: var(--secondary-one);
+}
+.notificationcontrol-container h3 {
+  font-size: 1.6vw;
+}
+.edit-notification-textgroup {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 75% auto;
+  column-gap: 1vw;
+  row-gap: 0.5vw;
+}
+.edit-notification-textgroup input,.edit-notification-textgroup select{
+  font-size: 1.1vw;
+  padding: 0.4vw 0.6vw;
+  outline: none;
+  border-radius: 0.3vw;
+  border: 0.1vw solid rgba(0,0,0,0.4);
+
+}
+.edit-notification-textgroup input[type="submit"]{
+  border: 0.1vw solid rgba(0,0,0,0.4);
+  outline: none;
+  background:transparent;
+  font-size: 1vw;
+  border-radius: 0.3vw;
+  color:var(--secondary-one);
+  cursor: pointer;
+}
+.edit-notification-textgroup input[type="submit"]:hover{
+  scale:1.01;
+  background:var(--secondary-one);
+  color:white
+}
+.current-popup-edit form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1vw;
+}
+.notification-edit-save{
+  width:40%;
+  padding: 0.5vw 1vw;
+  font-size: 1.2vw;
+  background: var(--secondary-five);
+  border: 0.1vw solid rgba(0,0,0,0.4);
+  border-radius: 0.2vw;
+  cursor: pointer;
+}
+.notification-edit-save{
+  scale:1.01
+}
+.notificationcontrol-container hr{
+height: 0.1vw;
+background: var(--secondary-one);
+border: none;
+border-radius: 0.1vw;
+outline: none;
+margin: 1vw auto;
+width: 60%;
+}
+.clear-notification-button{
+  padding: 0.5vw;
+  width:50%;
+  margin: 0px auto;
+  background:var(--alert);
+  outline: none;
+  border:0.1vw solid rgba(0,0,0,0.4);
+  color:var(--tertiary);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.2vw;
+}
+.clear-notification-button:hover{
+  scale:1.01
+}

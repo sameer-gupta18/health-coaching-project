@@ -1,0 +1,109 @@
+.consultation-us-container {
+  padding: 1vw 2vw;
+}
+.webinars-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  justify-content: center;
+  align-items: center;
+}
+.webinars-header h1 {
+  font-size: 3.4vw;
+  color: var(--secondary-one);
+}
+
+.main-consultation-us-container {
+  padding: 2vw;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+}
+.webinars-header hr {
+  height: 0.3vh;
+  background: var(--secondary-one);
+  border-radius: 0.25vh;
+  width: 60vw;
+  border: none;
+}
+
+.consultation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.consultation-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vw;
+}
+.consultation-info ul li {
+  font-size: 1.3vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  color: var(--secondary-three);
+  font-weight: bold;
+}
+.consultation-info ul li svg {
+  font-size: 1.6vw;
+  color: black;
+}
+.google-maps-container {
+  height: 40vh;
+  border-radius: 1vw;
+  overflow: hidden;
+  box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.05);
+}
+.form-container-consultation form {
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8vw;
+  grid-template-columns: auto auto;
+}
+.form-container-consultation form input,
+textarea,
+.form-container-consultation form select {
+  border-radius: 0.5vw;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.1vw;
+}
+.form-container-consultation form input,
+.form-container-consultation form select {
+  width: 35vw;
+  padding: 1.1vw;
+}
+textarea {
+  height: 15vh;
+  width: 100%;
+  font-size: 1vw;
+  resize: none;
+  padding: 0.8vw;
+}
+.how-we-can-help {
+  grid-column: span 2;
+  width: 100%;
+}
+.form-container-consultation form input[type="submit"] {
+  border-radius: 0.5vw;
+  outline: none;
+  cursor: pointer;
+  background: var(--secondary-five);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  grid-column: span 2;
+}
+.form-container-consultation form input[type="submit"]:hover {
+  scale: 1.01;
+}
+.date-time-desc {
+  font-size: 1.2vw;
+  text-align: center;
+  opacity: 0.7;
+  color: var(--secondary-one);
+}

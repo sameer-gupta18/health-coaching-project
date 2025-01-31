@@ -1,0 +1,4 @@
+.admin-addtestimonial-container input[type="submit"]:disabled{
+opacity: 0.7;
+cursor:no-drop
+}

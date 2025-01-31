@@ -1,0 +1,31 @@
+.notificationpopup-container {
+  background: rgba(255, 255, 255,0.55);
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  max-width: 50vw;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+  padding: 0.5vw 1.5vw;
+  border-radius: 1vw 0px 0px 0px;
+  column-gap: 1vw;
+}
+.notificationpopup-container a{
+    text-decoration: none;
+    color:var(--accent);
+    font-size: 1.1vw;
+}
+.notificationpopup-container button{
+    outline: none;
+    background: transparent;
+    border: none;
+    color:var(--alert);
+    font-weight: bold;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.notificationpopup-container button:hover{
+    scale:1.02
+}

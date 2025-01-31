@@ -1,0 +1,70 @@
+.admin-consultations-edit-container {
+  display: flex;
+  row-gap: 1vw;
+  flex-direction: column;
+  padding: 1vw 2vw;
+}
+
+.admin-consultations-edit-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.5vw;
+  min-width: 50vw;
+}
+.consultation-edit-textboxes-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 0.7vw;
+  column-gap: 3vw;
+}
+.edit-consultation-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5vw;
+}
+.edit-consultation-input-container p {
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: var(--accent);
+}
+.edit-consultation-input-container input,
+.edit-consultation-input-container textarea,.edit-consultation-input-container select {
+  padding: 0.5vw 1.5vw;
+  font-size: 1w;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.5vw;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.edit-consultation-description {
+  grid-column: span 2;
+  width: 100%;
+}
+.edit-consultation-description textarea {
+  height: 5vw;
+  font-size: 0.9vw;
+  width: 45vw;
+  text-align: left;
+  padding: 0.5vw 1vw;
+}
+.admin-consultations-edit-container input[type="submit"]{
+    width:25vw;
+    padding: 0.7vw;
+    background: var(--tertiary-highlight);
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:var(--secondary-);
+    border-radius: 0.3vw;
+    cursor: pointer;
+}
+.admin-consultations-edit-container input[type="submit"]:hover{
+    scale:1.01;
+    background:var(--tertiary-dark)
+}

@@ -1,0 +1,88 @@
+.admin-edittestimonials-container h1 {
+  font-size: 2.5vw;
+  color: var(--accent);
+  padding-bottom: 0.5vw;
+}
+.admin-edittestimonials-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  row-gap: 0.2vw;
+}
+.add-testimonial-btn {
+  padding: 1vw;
+  margin: 1vw;
+  border: 0.1vw solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-weight: bold;
+  font-size: 1.3vw;
+  border-radius: 0.5vw;
+  background: var(--secondary-three);
+  color: white;
+  cursor: pointer;
+}
+.add-testimonial-btn:hover {
+  scale: 1.01;
+}
+.admin-testimonials-container {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 0.5vw;
+  padding: 1vw;
+}
+
+.admin-testimonial-container {
+  background: var(--tertiary-highlight);
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1vw;
+  border-radius: 0.5vw;
+}
+.admin-testimonial-right img {
+  width: 20vw;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 0px 0.5vw 0.5vw 0px;
+}
+.admin-testimonial-left p {
+  margin: 0.3vw 0vw;
+}
+.admin-testimonial-left p:nth-child(1) {
+  font-size: 2.1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.admin-testimonial-left p:nth-child(2) {
+  padding: 0.3vw 0.6vw;
+  background: var(--secondary-one);
+  width: fit-content;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.2vw;
+  font-size: 1.2vw;
+}
+.admin-testimonial-left p:nth-child(3) {
+  text-align: center;
+  margin: 2vw 0vw;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2vw;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+}
+.admin-testimonials-buttons {
+  justify-self: center;
+  display: flex;
+  column-gap: 0.5vw;
+}
+.admin-testimonials-buttons button {
+  background: transparent;
+  color: var(--alert);
+  text-decoration: underline;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
