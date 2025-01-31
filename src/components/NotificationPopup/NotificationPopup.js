@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NotificationPopup() {
   let [notification, setNotification] = useState();
   useEffect(() => {
-    axios.get("http://localhost:3001/consumer-notifications").then((res) => {
+    axios.get("http://localhost:3001/consumer-notifications").then((res)=>{
       setNotification(res.data);
     });
   }, []);
