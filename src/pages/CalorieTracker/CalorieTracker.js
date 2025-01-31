@@ -10,8 +10,6 @@ import { MdOutlineNetworkWifi3Bar } from "react-icons/md";
 import { MdOutlineSignalWifi4Bar } from "react-icons/md";
 import Footer from "../../components/Footer/Footer";
 import { IoMdDownload } from "react-icons/io";
-// import OpenAI from "openai";
-// import axios from "axios";
 
 function CalorieTracker() {
   const [nutritionData] = useState(foods);
@@ -35,55 +33,6 @@ function CalorieTracker() {
   let [pagenum, setPageNum] = useState(1);
   let [searchInput, setSearchInput] = useState("");
   let [totalFoodAmount, setTotalFoodAmount] = useState(0);
-  // const openai = new OpenAI({
-  //   apiKey:
-  //     "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",
-  //   dangerouslyAllowBrowser: true,
-  // });
-
-  // async function generateRecipe(foodname) {
-  //   try {
-  //     const result = await openai.chat.completions.create({
-  //       model: "o1-mini",
-  //       messages: [
-  //         {
-  //           role: "user",
-  //           content: `Generate possible food recipes with ${foodname}. Generate max to max 70-80 words`,
-  //         },
-  //       ],
-  //       max_tokens: 100,
-  //     });
-  //     console.log(result.choices[0].message);
-  //   } catch (error) {
-  //     console.log("Error in generating images;", error);
-  //   }
-  // }
-  // const client = new OpenAI({
-  //   apiKey:
-  //     "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",
-  //   dangerouslyAllowBrowser: true,
-  // });
-  // const generateRecipe = async (fooditem) => {
-  //   const response = await axios.post(
-  //     "https://api.openai.com/v1/chat/completions",
-  //     {
-  //       messages: [
-  //         {
-  //           role: "user",
-  //           content: `Generate a recipe for a food including ${fooditem}. Generate a maximum of 80-90 words.`,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Authorization: `Bearer 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`,
-  //       },
-  //     }
-  //   );
-  //   console.log(response.data.choices[0].message.content)
-  // };
-
   useEffect(() => {
     set_max_pagenum(Math.ceil(filteredNutritionData.length / max_per_page));
     setPageNum(1);
