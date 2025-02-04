@@ -4,7 +4,6 @@ import Header from "../../components/Header/Header";
 import {} from "./knowyourbody.css";
 import { GiWeightScale } from "react-icons/gi";
 import { FaRuler } from "react-icons/fa6";
-import { IoMdPerson } from "react-icons/io";
 import rawdata from "./comments";
 import Footer from "../../components/Footer/Footer";
 
@@ -20,7 +19,6 @@ function KnowYourBody() {
   let [bmiNum, setBmiNum] = useState(0);
   let [description, setDescription] = useState();
   let [category, setCategory] = useState();
-  let [ailoading, setAiLoading] = useState(true);
   useEffect(() => {
     if (age < 18) {
       if (bmiNum < 16) {
@@ -107,19 +105,15 @@ function KnowYourBody() {
     }
   }, [bmiNum]);
 
-  let generatePrompt = () => {
-    setAiLoading(true);
-  };
-
   let generateResponses = async (event) => {
     event.preventDefault();
     let heightfinal =
       heightUnit === "in"
         ? height / 39.37
-        : heightUnit == "cm"
+        : heightUnit === "cm"
         ? height / 100
         : height / 3.281;
-    let weightfinal = weightUnit == "kgs" ? weight : weight / 2.205;
+    let weightfinal = weightUnit === "kgs" ? weight : weight / 2.205;
     setBmiNum((weightfinal / heightfinal ** 2).toFixed(1));
     setGenerated(true);
   };
@@ -147,7 +141,7 @@ function KnowYourBody() {
                   <input
                     type="number"
                     required
-                    max={weightUnit == "kgs" ? 299 : 499}
+                    max={weightUnit === "kgs" ? 299 : 499}
                     maxLength={3}
                     onChange={(e) => {
                       setWeight(e.target.value);

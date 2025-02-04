@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {} from "../dashboard.css";
 import NavMargin from "../../components/NavMargin";
 import Error404 from "../../pages/Error404";
@@ -12,7 +12,6 @@ import times from "../../common_functions/generateValidTime";
 import convertTime from "../../common_functions/convertTime";
 // import convertDate from "../../common_functions/convertDate";
 import placeholder from "../../assets/placeholder.png";
-import { BsWindowSidebar } from "react-icons/bs";
 import { useLocation, useNavigate } from "react-router-dom";
 import convertDate from "../../common_functions/convertDate";
 function EditWebinar() {
@@ -317,7 +316,7 @@ function EditWebinar() {
                           ? currentWebinarDetails.cover_image
                           : placeholder
                       }
-                      alt="Cover Image"
+                      alt="Cover"
                     />
                     <div className="add-webinar-file-cont">
                       <p>Upload Cover Image</p>

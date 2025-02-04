@@ -4,8 +4,7 @@ import {} from "./livewebinars.css";
 import axios from "axios";
 import { FiClock } from "react-icons/fi";
 import { IoMdPin } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
-import WebinarRegistration from "./WebinarRegistration";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import convertTime from "../../common_functions/convertTime";
@@ -19,7 +18,7 @@ function LiveWebinars() {
     webinars.then((res) => {
       setWebinarData(res.data);
     });
-  },[]);
+  }, []);
   let convertToRoute = (id) => {
     return `/live-webinars/register/${id.toString()}`;
   };

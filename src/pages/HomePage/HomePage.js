@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {} from "./homepage.css";
 import video from "../../assets/7677118-hd_1920_1080_25fps.mp4";
-import video2 from "../../assets/7677876-hd_1920_1080_25fps.mp4";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -9,7 +8,6 @@ import benefits from "./benefits";
 import NavMargin from "../../components/NavMargin";
 import { ReactTyped } from "react-typed";
 import services from "./clientservices";
-import dummy from "../../assets/bg-dummy.avif";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
@@ -17,7 +15,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../components/Footer/Footer";
 import BlendVector from "../../components/BlendVector/BlendVector";
-import coverphoto from "../../assets/about_me.jpg";
 import coverphoto1 from "../../assets/momimage1.JPG";
 import coverphoto2 from "../../assets/IMG_2193-removebg-preview.png";
 import convertDate from "../../common_functions/convertDate";
@@ -108,12 +105,13 @@ function HomePage() {
                     <a
                       href="https://www.instagram.com/prakrutibyrama/"
                       target="_blank"
+                      rel='noreferrer'
                     >
                       <li>
                         <FaInstagram />
                       </li>
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com">
                       <li>
                         <FaFacebookF />
                       </li>
@@ -130,7 +128,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="landing-photo">
-                <img src={coverphoto1} alt="Mom Image" />
+                <img src={coverphoto1} alt="Cover" />
               </div>
             </div>
             <div className="gradient-filler"></div>
@@ -280,7 +278,7 @@ function HomePage() {
                     <div className="testimonial-container-s">
                       <div className="testimonial-container" key={index}>
                         <div className="testimonial-image-container">
-                          <img src={testimonial.photo} alt={"Profile Photo"} />
+                          <img src={testimonial.photo} alt={"Profile"} />
                         </div>
                         <div className="testimonial-content-container">
                           <div className="testimonial-content-testimonial">

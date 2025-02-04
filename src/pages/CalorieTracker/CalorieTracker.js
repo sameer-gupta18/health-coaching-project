@@ -26,7 +26,7 @@ function CalorieTracker() {
     t_fiber: 0,
     t_iron: 0,
   });
-  let [max_per_page] = useState(20);
+  let [max_per_page,setMaxPerPage] = useState(20);
   let [max_pagenum, set_max_pagenum] = useState(
     Math.ceil(filteredNutritionData.length / max_per_page)
   );
@@ -55,7 +55,7 @@ function CalorieTracker() {
 
   let checkCurrentMeal = (id) => {
     for (let j = 0; j < currentMeal.length; j++) {
-      if (currentMeal[j].id == id) {
+      if (currentMeal[j].id === id) {
         return true;
       }
     }

@@ -61,12 +61,12 @@ function Footer() {
         </div>
         <div className="footer-socials-container">
           <ul>
-            <a href="https://www.instagram.com/prakrutibyrama/" target="_blank">
+            <a href="https://www.instagram.com/prakrutibyrama/" target="_blank" rel='noreferrer'>
               <li>
                 <FaInstagram />
               </li>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com">
               <li>
                 <FaFacebookF />
               </li>

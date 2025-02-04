@@ -173,7 +173,7 @@ function ViewWebinar() {
                               ) : null}
                               {webinar.tags.offline ? null : (
                                 <>
-                                  <a href={webinar.link} target="_blank">
+                                  <a href={webinar.link} target="_blank" rel='noreferrer'>
                                     Join Webinar Now
                                   </a>
                                 </>

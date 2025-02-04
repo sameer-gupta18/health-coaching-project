@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {} from "../dashboard.css";
 import NavMargin from "../../components/NavMargin";
 import Error404 from "../../pages/Error404";
@@ -9,7 +9,7 @@ import axios from "axios";
 import {} from "./addtestimonial.css";
 import placeholder from "../../assets/placeholder.png";
 import { useLocation, useNavigate } from "react-router-dom";
-import {} from './testimonialedit.css'
+import {} from "./testimonialedit.css";
 function TestimonialEdit() {
   let state = useLocation();
   let testimonial_raw = state ? state.state.testimonial : null;
@@ -31,7 +31,10 @@ function TestimonialEdit() {
   let submitTestimonial = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:3001/testimonials/${testimonial_raw.id}`, testimonial)
+      .put(
+        `http://localhost:3001/testimonials/${testimonial_raw.id}`,
+        testimonial
+      )
       .then(() => {
         alert("Edited Testimonial Successfully");
         navigate("/admin/testimonials");

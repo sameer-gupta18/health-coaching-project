@@ -1,280 +1,360 @@
 {
   "webinars": [
     {
-      "id": "6d7a",
-      "name": "Webinar 1: Introduction to Food",
-      "register_timestamp": "26/01/2025 | 23:00",
-      "description": "Dive deep into the world of food",
-      "tags": {
-        "paid": true,
-        "offline": true
-      },
-      "date": "2025-01-29",
-      "time": "10:00",
-      "location": "Zoom",
-      "link": "",
-      "cover_image": "http://localhost:5000/upload/aa2f9274fc0fa1cf284a691785746d01",
-      "participants": [
-        {
-          "name": "John Abrams",
-          "email": "johnabrams@gmail.com",
-          "phone_number": "99932398",
-          "descriptor": "Looking to decrease weight",
-          "time_stamp": "27/01/2025 | 00:49"
-        }
-      ],
-      "price": "2000"
-    },
-    {
-      "id": "6d7b",
-      "name": "Webinar 1: Introduction to Food",
-      "register_timestamp": "26/01/2025 | 23:00",
-      "description": "Dive deep into the world of food",
-      "tags": {
-        "paid": true,
-        "offline": true
-      },
-      "date": "2025-01-31",
-      "time": "19:00",
-      "location": "Zoom",
-      "link": "",
-      "cover_image": "http://localhost:5000/upload/03a9269da2c7817088a593d01c653988",
-      "participants": [
-        {
-          "name": "Sameer Gupta",
-          "email": "gamingwithsam0@gmail.com",
-          "phone_number": "9971677663",
-          "descriptor": "I want to increase weight",
-          "time_stamp": "25/01/2025 | 00:00"
-        },
-        {
-          "name": "Sameer Gupta",
-          "email": "gamingwithsam0@gmail.com",
-          "phone_number": "9971677663",
-          "descriptor": "I want to increase weight",
-          "time_stamp": "25/01/2025 | 00:00"
-        },
-        {
-          "name": "lkdfjdslkj",
-          "email": "kjdlskjfkj@Gmail.com",
-          "phone_number": "93849839",
-          "descriptor": "klfjsjdkfjd",
-          "time_stamp": "27/01/2025 | 09:19"
-        }
-      ],
-      "price": "2000",
-      "update_timestamp": "27/01/2025 | 09:19"
-    },
-    {
-      "id": "ce62",
-      "name": "dsdlkj",
-      "register_timestamp": "26/01/2025 | 23:00",
-      "description": "lsdjfkadjlk",
+      "id": "0387",
+      "name": "Introduction to Nutrigenetics",
+      "register_timestamp": "04/02/2025 | 11:36",
+      "description": "Discover how your genes influence nutrition in our Introduction to Nutrigenetics webinar. Learn how genetic variations affect nutrient absorption, metabolism, and health, and explore personalized dietary strategies for optimal well-being. Perfect for health enthusiasts, professionals, and anyone curious about the future of nutrition and genetics!",
       "tags": {
         "paid": false,
         "offline": false
       },
-      "date": "2025-01-29",
-      "time": "10:00",
-      "location": "3334",
-      "link": "https://www.google.com",
-      "cover_image": "http://localhost:5000/upload/69e33a664ff6ff8a3504405839d9f293",
+      "date": "2025-03-13",
+      "time": "16:00",
+      "location": "Zoom",
+      "link": "https://zoom.us/j/97871001085?pwd=rukTIrYMVVpna6UKPslhx5yB0J9eUP.1#success",
+      "cover_image": "http://localhost:5000/upload/23296cf974ab7970cc3f19246bf63b53",
       "participants": [
         {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
-        },
-        {
-          "name": "Sameer",
-          "email": "hH@gmail.com",
-          "phone_number": "929382938",
-          "descriptor": "jkdjsljdfksdf",
-          "time_stamp": "26/01/2025 | 23:07"
+          "name": "Adam Chase",
+          "email": "xxx@hotmail.com",
+          "phone_number": "0987654321",
+          "descriptor": "-",
+          "time_stamp": "04/02/2025 | 12:53"
         }
       ],
-      "price": "",
-      "update_timestamp": "27/01/2025 | 00:48"
+      "price": ""
     },
     {
-      "id": "d68f",
-      "name": "Nutrigenetics",
-      "register_timestamp": "27/01/2025 | 01:01",
-      "description": "Dive Into the world of nutrigenetics: how your genes define your body.",
+      "id": "0b7f",
+      "name": "Why Carbohydrates are important?",
+      "register_timestamp": "04/02/2025 | 11:38",
+      "description": "Join our Why Carbs Are Important webinar to explore the essential role of carbohydrates in energy, brain function, and overall health. Learn about good vs. bad carbs, debunk common myths, and discover how to balance your intake for optimal well-being. Perfect for health enthusiasts and professionals alike!",
       "tags": {
         "paid": true,
         "offline": false
       },
-      "date": "2025-02-11",
+      "date": "2025-04-04",
+      "time": "14:00",
+      "location": "Google Meet",
+      "link": "https://meet.google.com/pmw-rieo-ysf",
+      "cover_image": "http://localhost:5000/upload/feec37d71c61dd3f22886c90d3b55374",
+      "participants": [],
+      "price": "700"
+    },
+    {
+      "id": "a1e8",
+      "name": "Mind. Body. Soul.",
+      "register_timestamp": "04/02/2025 | 12:21",
+      "description": "Join our Mind. Body. Soul. webinar to explore the connection between mental, physical, and spiritual well-being. Discover practical strategies for balance, resilience, and holistic health. Perfect for anyone seeking a more mindful and fulfilling life!",
+      "tags": {
+        "paid": false,
+        "offline": true
+      },
+      "date": "2025-08-20",
       "time": "18:00",
-      "location": "Zoom",
-      "link": "https://www.youtube.com",
-      "cover_image": "http://localhost:5000/upload/41abe18cb1c491d5424894b083bf15ec",
+      "location": "XXX Street, XX Sector, XXXX",
+      "link": "",
+      "cover_image": "http://localhost:5000/upload/54e199bafc976f5b7c692ed52fd89ee9",
       "participants": [
         {
-          "name": "Sameer Gupta",
-          "email": "gamingwithsam0@gmail.com",
-          "phone_number": "09971677663",
-          "descriptor": "etet",
-          "time_stamp": "27/01/2025 | 01:01"
+          "name": "John Doe",
+          "email": "xxx@gmail.com",
+          "phone_number": "1234567890",
+          "descriptor": "More about how I can do exercise in the outdoors",
+          "time_stamp": "04/02/2025 | 12:48"
         },
         {
-          "name": "Sameer Gupta",
-          "email": "gamingwithsam0@gmail.com",
-          "phone_number": "09971677663",
-          "descriptor": "221132",
-          "time_stamp": "27/01/2025 | 21:52"
+          "name": "Adam Chase",
+          "email": "xxx@hotmail.com",
+          "phone_number": "0987654321",
+          "descriptor": "-",
+          "time_stamp": "04/02/2025 | 12:53"
+        },
+        {
+          "name": "Shawn Long",
+          "email": "xxx@yahoo.com",
+          "phone_number": "1234567890",
+          "descriptor": "New forms for exercise",
+          "time_stamp": "04/02/2025 | 12:53"
+        },
+        {
+          "name": "Harold Specter",
+          "email": "xxx@outlook.com",
+          "phone_number": "1234567890",
+          "descriptor": "New forms for exercise",
+          "time_stamp": "04/02/2025 | 13:00"
         }
       ],
-      "price": "1100",
-      "update_timestamp": "27/01/2025 | 22:37"
+      "price": "",
+      "update_timestamp": "04/02/2025 | 12:47"
+    },
+    {
+      "id": "0fc5",
+      "name": "Importance of Exercise: An Interactive Lesson",
+      "register_timestamp": "04/02/2025 | 12:24",
+      "description": "Join our Importance of Exercise: An Interactive Lesson to explore how physical activity boosts health, energy, and well-being. Engage in interactive discussions, learn practical tips, and discover the science behind movement. Perfect for all fitness levels looking to stay active and healthy!",
+      "tags": {
+        "paid": true,
+        "offline": true
+      },
+      "date": "2025-09-01",
+      "time": "15:00",
+      "location": "XXX Building, XX Street, XXXX City",
+      "link": "",
+      "cover_image": "http://localhost:5000/upload/8d5e2ec7dc94ac6c9a53e9cc7d83a2c3",
+      "participants": [
+        {
+          "name": "John Doe",
+          "email": "xxx@gmail.com",
+          "phone_number": "1234567890",
+          "descriptor": "More about how I can do exercise in the outdoors",
+          "time_stamp": "04/02/2025 | 12:48"
+        },
+        {
+          "name": "Adam Chase",
+          "email": "xxx@hotmail.com",
+          "phone_number": "0987654321",
+          "descriptor": "-",
+          "time_stamp": "04/02/2025 | 12:53"
+        },
+        {
+          "name": "Shawn Long",
+          "email": "xxx@yahoo.com",
+          "phone_number": "1234567890",
+          "descriptor": "New forms for exercise",
+          "time_stamp": "04/02/2025 | 12:53"
+        },
+        {
+          "name": "Jackson Heat",
+          "email": "xxx@yahoo.com",
+          "phone_number": "0987654321",
+          "descriptor": "New forms for exercise",
+          "time_stamp": "04/02/2025 | 12:55"
+        },
+        {
+          "name": "Harold Specter",
+          "email": "xxx@outlook.com",
+          "phone_number": "1234567890",
+          "descriptor": "New forms for exercise",
+          "time_stamp": "04/02/2025 | 13:00"
+        }
+      ],
+      "price": "1500"
     }
   ],
   "contacts": [
     {
-      "id": "f2cb",
-      "time_stamp": "15/01/2025 | 00:41",
-      "name": "JJ",
-      "phone_no": "928374668",
-      "description": "I have a possible webinar at XXX place at XX time"
+      "id": "cdd9",
+      "time_stamp": "04/02/2025 | 12:45",
+      "name": "Shina Ryan",
+      "phone_no": "1234567890",
+      "description": "I have a possible collaboration on XX, XXXXX, XXXX with 200+ people. Please let me know"
     },
     {
-      "id": "6805",
-      "time_stamp": "21/01/2025 | 11:19",
-      "name": "Sameer",
-      "phone_no": "9283982398329",
-      "description": "lkfjskldkjflkdsjf"
+      "id": "5aec",
+      "time_stamp": "04/02/2025 | 12:46",
+      "name": "Aaron James",
+      "phone_no": "0987654321",
+      "description": "I own a school in XXXXX, and would like you to conduct a session with my teachers"
     },
     {
-      "id": "e92d",
-      "time_stamp": "21/01/2025 | 12:08",
-      "name": "sameer",
-      "phone_no": "292939393",
-      "description": "jdjjdjdj"
+      "id": "7e69",
+      "time_stamp": "04/02/2025 | 12:46",
+      "name": "Ben Doyle",
+      "phone_no": "1234567890",
+      "description": "I want to invite you to my interview "
     }
   ],
-  "consultations": [],
+  "consultations": [
+    {
+      "id": "df83",
+      "time_stamp": "04/02/2025 | 12:34",
+      "name": "John Doe ",
+      "phone_no": "1234567890",
+      "email": "xxx@gmail.com",
+      "age": "53",
+      "apt_date": "2025-03-18",
+      "apt_time": "17:00",
+      "description": "I have some problems losing fat. Would like to consult for ways to balance exercise with work!",
+      "confirmed": false,
+      "google_calender": false,
+      "notes": "Remember to ask about any pre existing medical conditions in the consultation",
+      "time_stamp_updated": "04/02/2025 | 12:41",
+      "passed": false
+    },
+    {
+      "id": "6c8e",
+      "time_stamp": "04/02/2025 | 12:35",
+      "name": "Sarah Johnson",
+      "phone_no": "0987654321",
+      "email": "xxx@hotmail.com",
+      "age": "42",
+      "apt_date": "2025-04-13",
+      "apt_time": "19:00",
+      "description": "I want to get some healthy eating tips",
+      "confirmed": true,
+      "google_calender": false,
+      "notes": "",
+      "passed": false
+    },
+    {
+      "id": "decc",
+      "time_stamp": "04/02/2025 | 12:37",
+      "name": "Jack Brown",
+      "phone_no": "1234567890",
+      "email": "xxx@outlook.com",
+      "age": "19",
+      "apt_date": "2025-07-14",
+      "apt_time": "12:00",
+      "description": "I have problems with diabetes. Want tips",
+      "confirmed": false,
+      "google_calender": false,
+      "notes": "",
+      "passed": false
+    },
+    {
+      "id": "228a",
+      "time_stamp": "04/02/2025 | 12:38",
+      "name": "Emily D. Olson",
+      "phone_no": "0987654321",
+      "email": "xxx@yahoo.com",
+      "age": "61",
+      "apt_date": "2025-06-24",
+      "apt_time": "15:00",
+      "description": "Want some advice in general",
+      "confirmed": false,
+      "google_calender": false,
+      "notes": "???",
+      "time_stamp_updated": "04/02/2025 | 12:42",
+      "passed": false
+    },
+    {
+      "id": "aae7",
+      "time_stamp": "04/02/2025 | 12:40",
+      "name": "Ron Coleman",
+      "phone_no": "1234567890",
+      "email": "xxx@gmail.com",
+      "age": "44",
+      "apt_date": "2025-06-24",
+      "apt_time": "18:00",
+      "description": "I want to reduce sugar intake. ",
+      "confirmed": true,
+      "google_calender": false,
+      "notes": "",
+      "passed": false
+    }
+  ],
   "testimonials": [
     {
-      "name": "Sameer Gupta",
-      "age": 17,
+      "id": "167e",
+      "name": "John Doe",
+      "age": "22",
       "description": "Client",
-      "testimonial": "Very good service! I was very underweight before, but now I am healthy thanks to Rama.",
-      "photo": "https://t4.ftcdn.net/jpg/05/50/61/75/360_F_550617518_Eu3U6kTl3mODPvnfTMFHQ88z1y5KNfNQ.jpg",
-      "id": "0311"
+      "testimonial": "Working with Rama transformed my health! Their personalized approach helped me build sustainable habits, boost my energy, and feel my best. I finally have a lifestyle that works for me!",
+      "photo": "http://localhost:5000/upload/d8b6551539e2735c40a2283828aab145"
     },
     {
-      "name": "Meghna Gupta",
-      "age": 25,
-      "description": "Client",
-      "testimonial": "Very good service! I was very underweight before, but now I am healthy thanks to Rama.",
-      "photo": "http://localhost:5000/upload/9ba3382691bc51b92a5a69cc2471ce32",
-      "id": "2680"
+      "id": "e4a8",
+      "name": "Alex Williams",
+      "age": "32",
+      "description": "Partner",
+      "testimonial": "Partnering with Rama on wellness programs has been a game-changer. Their knowledge, dedication, and innovative strategies make a real impact on people's lives. ",
+      "photo": "http://localhost:5000/upload/28f0ce936a2abdc0850339987f3f7aef"
     },
     {
-      "id": "16c8",
-      "name": "John",
-      "age": "55",
-      "description": "Client",
-      "testimonial": "This was one of the best services I have ever received. Thanks!",
-      "photo": "http://localhost:5000/upload/f749e1d09354deda80d86207c685804a"
+      "id": "1c3e",
+      "name": "Shawn Adams",
+      "age": "40",
+      "description": "Collaborator",
+      "testimonial": "Collaborating with Rama has been amazing! Their expertise and passion for holistic health have helped our clients achieve real, lasting results. A truly valuable partnership!",
+      "photo": "http://localhost:5000/upload/badcd6777daf7dc6d8e80e9c29c0ab31"
     }
   ],
   "notifications": [
     {
-      "id": "9c11",
-      "time_stamp": "27/01/2025 | 18:53",
+      "id": "99c4",
+      "time_stamp": "04/02/2025 | 11:36",
+      "title": "Added New Webinar",
+      "description": "You have added a new webinar titled Introduction to Nutrigenetics on 13th March, 2025 at 4:00 PM",
+      "route": "/admin/webinar/view"
+    },
+    {
+      "id": "0f8e",
+      "time_stamp": "04/02/2025 | 12:28",
       "title": "Added New Leave Day",
-      "description": "Successfully added an off day for 18th February, 2025",
+      "description": "Successfully added an off day for 11th August, 2025",
       "route": "/admin/leave-day/add"
     },
     {
-      "id": "85a0",
-      "time_stamp": "27/01/2025 | 21:52",
-      "title": "New Webinar Registree",
-      "description": "Sameer Gupta (09971677663) has registered for 'Nutrigenetics' to be hosted on 11th February, 2025 at 6:00 PM",
-      "route": "/admin/webinar/view"
-    },
-    {
-      "id": "eb1b",
-      "time_stamp": "27/01/2025 | 22:37",
-      "title": "Updated Webinar",
-      "description": "Nutrigenetics has been updated: Date: 11th February, 2025. Time: 6:00 PM",
-      "route": "/admin/webinar/view"
-    },
-    {
-      "id": "59b4",
-      "time_stamp": "28/01/2025 | 11:06",
+      "id": "1527",
+      "time_stamp": "04/02/2025 | 12:34",
       "title": "New Consultation",
-      "description": "Aarav (110) wants a consultation on 13th February, 2025 at 8:00 PM",
+      "description": "John Doe  (53) wants a consultation on 18th March, 2025 at 5:00 PM",
       "route": "/admin/dashboard"
     },
     {
-      "id": "4255",
-      "time_stamp": "28/01/2025 | 11:07",
-      "title": "Updated Consultation",
-      "description": "Aarav's consultation has been updated: Aarav (17) wants a consultation on 13th February, 2025 at 8:00 PM",
+      "id": "64ca",
+      "time_stamp": "04/02/2025 | 12:41",
+      "title": "Confirmed Consultation",
+      "description": "Confirmed Consultation with Ron Coleman on 24th June, 2025 at 6:00 PM",
       "route": "/admin/dashboard"
+    },
+    {
+      "id": "c2b6",
+      "time_stamp": "04/02/2025 | 12:42",
+      "title": "Updated Consultation",
+      "description": "Emily D. Olson's consultation has been updated: Emily D. Olson (61) wants a consultation on 24th June, 2025 at 3:00 PM",
+      "route": "/admin/dashboard"
+    },
+    {
+      "id": "629a",
+      "time_stamp": "04/02/2025 | 12:46",
+      "title": "New Contact Request",
+      "description": "Ben Doyle (1234567890) wants to contact you. Their query is: I want to invite you to my interview ",
+      "route": "/admin/client-queries"
+    },
+    {
+      "id": "64ea",
+      "time_stamp": "04/02/2025 | 12:47",
+      "title": "Updated Webinar",
+      "description": "Mind. Body. Soul. has been updated: Date: 20th August, 2025. Time: 6:00 PM",
+      "route": "/admin/webinar/view"
+    },
+    {
+      "id": "15bc",
+      "time_stamp": "04/02/2025 | 12:53",
+      "title": "New Webinar Registree",
+      "description": "Shawn Long (1234567890) has registered for 'Importance of Exercise: An Interactive Lesson' to be hosted on 1st September, 2025 at 3:00 PM",
+      "route": "/admin/webinar/view"
     }
   ],
   "offdays": [
     {
-      "id": "2f19",
-      "date": "2025-01-29"
+      "id": "1d00",
+      "date": "2025-06-23"
     },
     {
-      "id": "eb04",
-      "date": "2025-02-18"
+      "id": "2eb1",
+      "date": "2025-07-04"
+    },
+    {
+      "id": "fdf8",
+      "date": "2025-12-25"
+    },
+    {
+      "id": "30ee",
+      "date": "2025-11-17"
+    },
+    {
+      "id": "8dbf",
+      "date": "2025-08-11"
     }
   ],
   "consumer-notifications": [
     {
-      "content": "Hello",
-      "route": "/bmi-calculator",
+      "content": "Join my Upcoming Webinar \"Importance of Exercise: An Interactive Lesson\" on 1st June, 2025. Click Here to Join Now",
+      "route": "/live-webinars",
       "id": "1"
     }
   ]

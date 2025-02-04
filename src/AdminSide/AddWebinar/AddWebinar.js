@@ -12,7 +12,6 @@ import times from "../../common_functions/generateValidTime";
 import convertTime from "../../common_functions/convertTime";
 // import convertDate from "../../common_functions/convertDate";
 import placeholder from "../../assets/placeholder.png";
-import { BsWindowSidebar } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import convertDate from "../../common_functions/convertDate";
 function AddWebinar() {
@@ -342,7 +341,7 @@ function AddWebinar() {
                             )
                           : placeholder
                       }
-                      alt="Cover Image"
+                      alt="Webinar Add"
                     />
                     <div className="add-webinar-file-cont">
                       <p>Upload Cover Image</p>

@@ -6,9 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 import {} from "./webinarconfirmation.css";
 import Footer from "../../components/Footer/Footer";
 function WebinarConfirmation() {
-  let { webinarid, name } = useParams();
   let { state } = useLocation();
-  let navigate = useNavigate();
   const participant = state
     ? state.updatedWebinar.participants[
         state.updatedWebinar.participants.length - 1
@@ -32,7 +30,7 @@ function WebinarConfirmation() {
             {state.updatedWebinar.tags.offline ? (
               <></>
             ) : (
-              <a href={state.updatedWebinar.link} target="_blank">
+              <a href={state.updatedWebinar.link} target="_blank" rel='noreferrer'>
                 Join the Webinar
               </a>
             )}
