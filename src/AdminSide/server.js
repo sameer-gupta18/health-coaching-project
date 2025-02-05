@@ -59,5 +59,4 @@ app.post("/upload", upload.single("file"), (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log(getMacAddress());
 });
