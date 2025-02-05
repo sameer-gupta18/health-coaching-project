@@ -85,24 +85,24 @@ function Contact() {
                 <span>
                   <HiOutlineMail />{" "}
                 </span>
-                rghealthcoach@gmail.com
+                xxxxx@gmail.com
               </li>
               <li>
                 <span>
                   <FaPhone />
                 </span>
-                +91 9971677827
+                +91 99716XXXXX
               </li>
               <li>
                 <span>
                   <IoMdPin />
                 </span>
-                Sector 93B, Noida
+                XX Street, Sector XX, XXXX 
               </li>
             </ul>
             <div className="google-maps-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.9284617568503!2d77.3907802386588!3d28.5139521007938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce89028bc8beb%3A0xdf5c501c8d42641f!2sOmaxe%20Forest%20Spa%2C%20Sector%2093B%2C%20Noida%2C%20Uttar%20Pradesh%20201304!5e0!3m2!1sen!2sin!4v1731479136020!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.842706158552!2d77.37762647455244!3d28.514379789437967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce89d16aaaaab%3A0x8a59a3c4f8fcdc3f!2sGenesis%20Global%20School%20%7C%20Best%20Boarding%20School%20in%20Delhi%20NCR!5e0!3m2!1sen!2sin!4v1738778459084!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 title="Google Maps Container"

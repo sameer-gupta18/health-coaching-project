@@ -225,8 +225,8 @@
       "description": "Want some advice in general",
       "confirmed": false,
       "google_calender": false,
-      "notes": "???",
-      "time_stamp_updated": "04/02/2025 | 12:42",
+      "notes": "",
+      "time_stamp_updated": "05/02/2025 | 23:40",
       "passed": false
     },
     {
@@ -353,7 +353,7 @@
   ],
   "consumer-notifications": [
     {
-      "content": "Join my Upcoming Webinar \"Importance of Exercise: An Interactive Lesson\" on 1st June, 2025. Click Here to Join Now",
+      "content": "Have a look at my Webinar",
       "route": "/live-webinars",
       "id": "1"
     }
