@@ -138,6 +138,13 @@
           "phone_number": "1234567890",
           "descriptor": "New forms for exercise",
           "time_stamp": "04/02/2025 | 13:00"
+        },
+        {
+          "name": "Sameer Gupta",
+          "email": "gamingwithsam0@gmail.com",
+          "phone_number": "09971677663",
+          "descriptor": "545",
+          "time_stamp": "06/02/2025 | 00:04"
         }
       ],
       "price": "1500"
@@ -211,6 +218,7 @@
       "confirmed": false,
       "google_calender": false,
       "notes": "",
+      "time_stamp_updated": "06/02/2025 | 19:01",
       "passed": false
     },
     {
@@ -322,10 +330,10 @@
       "route": "/admin/webinar/view"
     },
     {
-      "id": "15bc",
-      "time_stamp": "04/02/2025 | 12:53",
+      "id": "3d51",
+      "time_stamp": "06/02/2025 | 00:04",
       "title": "New Webinar Registree",
-      "description": "Shawn Long (1234567890) has registered for 'Importance of Exercise: An Interactive Lesson' to be hosted on 1st September, 2025 at 3:00 PM",
+      "description": "Sameer Gupta (09971677663) has registered for 'Importance of Exercise: An Interactive Lesson' to be hosted on 1st September, 2025 at 3:00 PM",
       "route": "/admin/webinar/view"
     }
   ],
