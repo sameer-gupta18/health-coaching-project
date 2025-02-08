@@ -10,10 +10,6 @@ let footercontent = [
         name: "About",
         link: "/about-us",
       },
-      {
-        name: "Blogs",
-        link: "/blogs",
-      },
     ],
   },
   {
