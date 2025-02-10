@@ -1,5 +1,5 @@
 import { csv } from "d3-fetch";
-import data from "../../data/datastore.json";
+import data from '../../data/nutrition.csv';
 const foods = [];
 csv(data).then((text) => {
   for (var i = 0; i < text.length; i++) {
