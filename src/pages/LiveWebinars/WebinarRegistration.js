@@ -26,15 +26,15 @@ function WebinarRegistration() {
   function convertToTime(string) {
     return string < 10 ? `0${string.toString()}` : string.toString();
   }
-  const resend = new Resend("re_123456789");
-  // let sendEmail = async (emailId) => {
-  //   const data = await resend.emails.send({
-  //     from: "prakrutibyrama@noreply.com",
-  //     to: emailId,
-  //     subject: `${webinar.name} | ${userName} - Confirmation`,
-  //     react: <Email webinar={webinar} participantName={userName} />,
-  //   });
-  // };
+  // const resend = new Resend("re_123456789");
+  // // let sendEmail = async (emailId) => {
+  // //   const data = await resend.emails.send({
+  // //     from: "prakrutibyrama@noreply.com",
+  // //     to: emailId,
+  // //     subject: `${webinar.name} | ${userName} - Confirmation`,
+  // //     react: <Email webinar={webinar} participantName={userName} />,
+  // //   });
+  // // };
   let registerParticipant = async (event) => {
     event.preventDefault();
     const today = new Date();

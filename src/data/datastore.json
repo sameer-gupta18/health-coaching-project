@@ -361,7 +361,7 @@
   ],
   "consumer-notifications": [
     {
-      "content": "Have a look at my Webinar",
+      "content": "Join my live webinar NOW!",
       "route": "/live-webinars",
       "id": "1"
     }
