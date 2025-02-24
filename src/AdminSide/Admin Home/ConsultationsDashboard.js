@@ -94,9 +94,6 @@ function Dashboard() {
   function convertToTime(string) {
     return string < 10 ? `0${string.toString()}` : string.toString();
   }
-  let sendMessage = () => {
-    return null;
-  };
   let confirmConsultation = async (targetId) => {
     let targetConsultation = consultations.find(
       (consultation) => consultation.id === targetId
@@ -130,48 +127,8 @@ function Dashboard() {
       )
     );
 
-    sendMessage();
   };
 
-  let addOneHour = (time) => {
-    let hours = time[0] + time[1];
-    let minutes = time[3] + time[4];
-    hours = parseInt(hours);
-    if (hours < 23) {
-      if (hours < 9) {
-        return `0${hours + 1}:${minutes}`;
-      } else {
-        return `${hours + 1}:${minutes}`;
-      }
-    } else {
-      return `00:${minutes}`;
-    }
-  };
-
-  // let addToCalender = async (consult) => {
-  //   try {
-  //     const eventDetails = {
-  //       name: consult.name,
-  //       location: "Zoom", //will have to add input to this
-  //       description: `Addressing the following issue: ${consult.description}`,
-  //       startDateTime: `${consult.apt_date}T${consult.apt_time}:00+05:30`,
-  //       endDateTime: `${consult.apt_date}T${addOneHour(
-  //         consult.apt_time
-  //       )}:00+05:30`,
-  //       attendeeEmail: consult.email,
-  //       presenterEmail: "gamingwithsam0@gmail.com", //have to change
-  //     };
-
-  //     const response = await axios.post(
-  //       "http://localhost:5000/add-to-google-calender",
-  //       { eventDetails }
-  //     );
-
-  //     console.log("Event Added to Calender", response.data);
-  //   } catch (error) {
-  //     console.log("error encountered", error);
-  //   }
-  // };
 
   let editConsultation = (targetConsultation) => {
     navigate(`/admin/consultation/edit/${targetConsultation.id}`, {

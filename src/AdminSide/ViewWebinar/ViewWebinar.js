@@ -135,7 +135,7 @@ function ViewWebinar() {
                               {webinar.participants.length !== 0 ? (
                                 <>
                                   <div className="view-webinar-participants">
-                                    {webinar.participants.map((participant) => {
+                                    {webinar.participants.map((participant) => { //displaying webinar participants
                                       return (
                                         <>
                                           <div className="view-webinar-participant">

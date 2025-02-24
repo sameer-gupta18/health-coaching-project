@@ -5,7 +5,6 @@ import HomePage from "../pages/HomePage/HomePage";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import About from "../pages/AboutPage/About";
 import LiveWebinars from "../pages/LiveWebinars/LiveWebinars";
-import Blogs from "../pages/Blogs/Blogs";
 import CalorieTracker from "../pages/CalorieTracker/CalorieTracker";
 import WebinarRegistration from "../pages/LiveWebinars/WebinarRegistration";
 import Error404 from "../pages/Error404";
@@ -58,9 +57,6 @@ function AppWrapper() {
   const [isLoaded, setIsLoaded] = useState(false);
   const location = useLocation();
   useEffect(() => {
-    const handleContentLoaded = () => {
-      setIsLoaded(true);
-    };
     window.addEventListener("load", () => {
       setTimeout(() => {
         setIsLoaded(true);
@@ -79,16 +75,14 @@ function AppWrapper() {
   return isLoaded ? (
     <>
       <Navbar />
-      {!location.pathname.startsWith("/admin") ? (
+      {!location.pathname.startsWith("/admin") ? ( //admin routing
         <>
           <NotificationPopup />
         </>
       ) : null}
       <ScrollToTop />
-      {/* <div className="app-container" style={container_style}>
-        <div className="app" style={app_style}> */}
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Routes>
+        <Route path="/" element={<HomePage />} /> {/*Routing of a few pages*/}
         <Route path="/about-us" element={<About />} />
         <Route path="/bmi-calculator" element={<KnowYourBody />} />
         <Route path="/live-webinars" element={<LiveWebinars />} />

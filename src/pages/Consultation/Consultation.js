@@ -60,23 +60,23 @@ function Consultation() {
   useEffect(() => {
     let getValues = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/consultations");
-        setUsedTimes(
+        const res = await axios.get("http://localhost:3001/consultations"); //runs this command asynchronously to the rest of the function
+        setUsedTimes( 
           res.data.map((resData) => ({
             aptDate: resData.apt_date,
             aptTime: resData.apt_time,
           }))
         );
-        const res1 = await axios.get("http://localhost:3001/offdays");
+        const res1 = await axios.get("http://localhost:3001/offdays"); //runs this command asynchronously to the rest of the function
         setOffDays(res1.data.map((resData) => resData.date));
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
     getValues();
-  }, []); // This will run only once when the component mounts
-  // console.log(offdays)
-  useEffect(() => {
+  }, []); 
+
+  useEffect(() => { //runs in the background constantly
     if (usedTimes === undefined) {
       return;
     }
@@ -99,7 +99,7 @@ function Consultation() {
     if (time === "" && timeList) {
       setTime(timeList[0]);
     }
-    return;
+    return; //returning null avoids data leaks
   });
   // console.log(date)
   // console.log("Times", times);
@@ -213,10 +213,10 @@ function Consultation() {
             <form onSubmit={submitContactFormData}>
               <div className="text-input">
                 <input
-                  type="text"
+                  type="text" 
                   placeholder="Enter Your Name"
-                  required
-                  maxLength={30}
+                  required //prevent unfilled input
+                  maxLength={30} //no extreme data
                   disabled={disabled}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -225,18 +225,18 @@ function Consultation() {
               </div>
               <div className="text-input">
                 <input
-                  type="number"
+                  type="number" //no incorrect data type
                   required
                   placeholder="Enter Your Phone Number"
                   disabled={disabled}
                   onChange={(e) => {
                     setPhone(e.target.value);
                   }}
-                  maxLength={11}
+                  maxLength={11} //no extreme data
                 />
               </div>
               <div className="text-input">
-                <input
+                <input //email input
                   type="email"
                   required
                   placeholder="Enter Your Email"
@@ -247,7 +247,7 @@ function Consultation() {
                 />
               </div>
               <div className="text-input">
-                <input
+                <input //integer input
                   type="number"
                   required
                   placeholder="Enter Your Age"
@@ -265,7 +265,7 @@ function Consultation() {
                 Enter a Preferred Time for a Consultation (IST)
               </p>
               <div className="text-input">
-                <DatePicker
+                <DatePicker //date input
                   selected={date ? new Date(date) : null}
                   onChange={handleDateChange}
                   filterDate={isWeekday}
@@ -275,7 +275,7 @@ function Consultation() {
                 />
               </div>
               <div className="text-input">
-                <select
+                <select //dropdown input
                   class="consultation-time-input"
                   onChange={(e) => {
                     setTime(e.target.value);
@@ -299,7 +299,7 @@ function Consultation() {
                 </select>
               </div>
               <div className="text-input how-we-can-help">
-                <textarea
+                <textarea //paragraph
                   className="text-area-consultation"
                   required
                   placeholder="Briefly Describe Your Problem"

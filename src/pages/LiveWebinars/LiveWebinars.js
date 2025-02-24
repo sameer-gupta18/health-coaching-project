@@ -13,8 +13,8 @@ import convertDate from "../../common_functions/convertDate";
 function LiveWebinars() {
   const navigate = useNavigate();
   let [webinarData, setWebinarData] = useState([]);
-  useEffect(() => {
-    let webinars = axios.get("http://localhost:3001/webinars");
+  useEffect(async() => { //get data from the DB
+    let webinars = await axios.get("http://localhost:3001/webinars");
     webinars.then((res) => {
       setWebinarData(res.data);
     });
@@ -25,6 +25,7 @@ function LiveWebinars() {
   let handleRegister = (webinar) => {
     navigate(convertToRoute(webinar.id), { state: { webinar } });
   };
+
   return (
     <>
       <NavMargin />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
 function Navbar() {
   var [navBackground, setNavBackground] = useState(window.scrollY === 0);
-  window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", () => { //listens for the scroll pixel in the background
     window.scrollY === 0 ? setNavBackground(true) : setNavBackground(false);
   });
   var navbar_style = {

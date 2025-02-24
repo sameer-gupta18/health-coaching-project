@@ -14,9 +14,7 @@ import convertDate from "../../common_functions/convertDate";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function ConsultationEdit() {
-  let access = verifyMAC();
-  let state = useLocation();
-  let consultation = state ? state.state.targetConsultation : null;
+ 
   let [currentConsultation, setCurrentConsultation] = useState({
     name: consultation.name,
     age: consultation.age,
@@ -56,7 +54,7 @@ function ConsultationEdit() {
       });
       const res1 = await axios.get("http://localhost:3001/offdays");
       setOffDays(res1.data.map((resData) => resData.date));
-    } catch (error) {
+    } catch (error) { //will not crash system on error, but will handle it using catch()
       console.error("Error fetching data:", error);
     }
   };
@@ -145,21 +143,23 @@ function ConsultationEdit() {
   };
   let handleDateChange = (inputDate) => {
     const formattedDate = inputDate.toISOString().split("T")[0];
-    setCurrentConsultation((prevConsultation) => ({
+    setCurrentConsultation((prevConsultation) => ({   
       ...prevConsultation,
       apt_date: formattedDate,
     }));
   };
-
+  let access = verifyMAC();
+  let state = useLocation();
+  let consultation = state ? state.state.targetConsultation : null;
   //   console.log(consultation);
   return (
     <>
-      {access === null ? (
+      {access === null ? ( 
         <>
           <NavMargin />
-          <p>Verifying Security...</p>
+          <p>Verifying Security...</p> 
         </>
-      ) : access && consultation ? (
+      ) : access && consultation ? ( //until access and consultation data is not loaded properly, the consultation cant be edited
         <>
           <NavMargin />
           <div className="admin-container">
@@ -298,7 +298,7 @@ function ConsultationEdit() {
 
                       {timeList
                         ? timeList.map((time) => {
-                            return (
+                            return (   
                               <>
                                 <option key={time} value={time}>
                                   {convertTime(time)}

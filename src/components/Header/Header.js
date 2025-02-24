@@ -1,6 +1,6 @@
 import React from "react";
 import {} from './header.css'
-function Header({ title }) {
+function Header({ title }) { //parameters can be passed too
   return (
     <>
       <div className="webinars-header">

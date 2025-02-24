@@ -19,6 +19,7 @@ import coverphoto1 from "../../assets/momimage1.JPG";
 import coverphoto2 from "../../assets/IMG_2193-removebg-preview.png";
 import convertDate from "../../common_functions/convertDate";
 import convertTime from "../../common_functions/convertTime";
+
 function NextArrowSample(props) {
   const { className, style, onClick } = props;
   return (
@@ -49,10 +50,14 @@ function PrevArrowSample(props) {
 }
 
 function HomePage() {
+  //FUNCTION BASED COMPONENTS OFFER ORGANIZATION. DATA, FUNCTIONALITIES, AND GUI ARE SEPERATED, AND THIS CODE IS REUSABLE
+  //Data
   let [webinarData, setWebinarData] = useState();
   let [testimonials, setTestimonials] = useState();
   let navigate = useNavigate();
 
+  //JS functions
+  
   useEffect(() => {
     let webinars = axios.get("http://localhost:3001/webinars");
     webinars.then((res) => {
@@ -85,7 +90,7 @@ function HomePage() {
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
-  return (
+  return ( //returns GUI
     <>
       <div className="home-page">
         <div className="landing-page">
@@ -177,10 +182,10 @@ function HomePage() {
             Helping You <span>Thrive</span>
           </h1>
           <div className="client-service-card-container">
-            {services.map((service) => {
+            {services.map((service) => {  //Integration with JS
               return (
                 <div className="client-service">
-                  <h2>{service.title}</h2>
+                  <h2>{service.title}</h2> 
                   <p>{service.subtitle}</p>
                   <div className="client-service-image">{service.image}</div>
                 </div>

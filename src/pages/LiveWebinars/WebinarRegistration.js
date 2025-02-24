@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/Footer";
 import convertDate from "../../common_functions/convertDate";
 import convertTime from "../../common_functions/convertTime";
 function WebinarRegistration() {
-  let { state } = useLocation();
+  
   let navigate = useNavigate();
   let [userName, setUserName] = useState();
   let [userEmail, setUserEmail] = useState();
@@ -18,7 +18,8 @@ function WebinarRegistration() {
   let [userDescription, setUserDescription] = useState();
   let [disable, setDisabled] = useState(false);
 
-  const webinar = state ? state.webinar : null;
+  let { state } = useLocation();
+  const webinar = state ? state.webinar : null; //extracts webinar send from live webinars in state and stores it in this variable
   let convertToFormat = (string) => {
     return string.toLowerCase().trim().replace(" ", "-");
   };
@@ -59,7 +60,7 @@ function WebinarRegistration() {
       participants: updatedParticipants,
     };
 
-    await axios
+    await axios //only runs the put command when the previous code blocks from line 40-61 have been run
       .put(`http://localhost:3001/webinars/${webinar.id}`, updatedWebinar)
       .then(() => {
         // console.log("Participant added successfully:", response.data);
@@ -96,9 +97,7 @@ function WebinarRegistration() {
         console.log(error);
       });
   };
-  let paymentGateway = () => {
-    // registerParticipant();
-  };
+
   return (
     <>
       <NavMargin />
@@ -123,7 +122,7 @@ function WebinarRegistration() {
                       required
                       maxLength={50}
                       onChange={(e) => {
-                        setUserName(e.target.value);
+                        setUserName(e.target.value); //how states are set/updated
                       }}
                       disabled={disable}
                     />

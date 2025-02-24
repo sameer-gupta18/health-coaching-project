@@ -258,7 +258,7 @@
   margin: 5vh 0vw;
 }
 .why-rama h1 {
-  color: var(--secondary-two);
+  color: var(--secondary-two); /*Using these root colors*/
   font-size: 4vw;
 }
 .why-rama h3 {

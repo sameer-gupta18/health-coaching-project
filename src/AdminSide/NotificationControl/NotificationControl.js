@@ -88,7 +88,7 @@ function NotificationControl() {
       "http://localhost:3001/notifications"
     );
     const deletePromises = objects.map((obj) => {
-      axios.delete(`http://localhost:3001/notifications/${obj.id}`);
+      axios.delete(`http://localhost:3001/notifications/${obj.id}`); //delete a particular object from the DB
     });
     await Promise.all(deletePromises).then(() => {
       window.location.reload();

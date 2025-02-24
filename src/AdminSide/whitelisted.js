@@ -1,2 +1,2 @@
-let whitelistedMac = ['C4:9D:ED:29:86:45']
+let whitelistedMac = ['']   //Whitelisted MAC Addresses can go here
 module.exports = whitelistedMac

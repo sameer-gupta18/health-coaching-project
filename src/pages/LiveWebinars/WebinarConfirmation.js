@@ -34,10 +34,6 @@ function WebinarConfirmation() {
                 Join the Webinar
               </a>
             )}
-            <p className="see-you-soon-confirmation">
-              This information has been emailed to your registered email address
-              too!
-            </p>
           </div>
           <Footer/>
         </>

@@ -148,8 +148,7 @@ function CalorieTracker() {
   };
 
   let removeMeal = (fooditem) => {
-    setCurrentMeal(currentMeal.filter((item) => item.id !== fooditem.id));
-    // setServingSizes(servingSizes.filter((item) => item.id !== fooditem.id));
+    setCurrentMeal(currentMeal.filter((item) => item.id !== fooditem.id)); //remove food food items that arent the target food item
     setCurrentMealStats({
       no_of_items: currentMealStats.no_of_items - 1,
       t_calories: currentMealStats.t_calories - fooditem.calories,
@@ -238,7 +237,7 @@ function CalorieTracker() {
           <div className="meal-container-container">
             <div className="meal-container">
               {currentMeal.length !== 0 ? (
-                currentMeal.map((mealItem, index) => {
+                currentMeal.map((mealItem) => { //displaying current Meal in calorie tracker
                   return (
                     <>
                       <div className="meal-item">
@@ -537,7 +536,7 @@ function CalorieTracker() {
           <div className="food-items-container">
             {filteredNutritionData.length > 0 ? (
               filteredNutritionData
-                .slice(
+                .slice( //show 20 food items depending on the page number
                   (pagenum - 1) * max_per_page,
                   (pagenum - 1) * max_per_page + (max_per_page - 1)
                 )

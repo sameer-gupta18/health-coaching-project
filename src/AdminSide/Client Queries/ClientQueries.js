@@ -9,14 +9,11 @@ import axios from "axios";
 import convertDate from "../../common_functions/convertDate";
 import convertTime from "../../common_functions/convertTime";
 import {} from "./clientqueries.css";
-import { RiPencilFill } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
 import { IoMdDownload } from "react-icons/io";
 
 function ClientQueries() {
   let access = verifyMAC();
   let [contactRequests, setContactRequests] = useState([]);
-  let navigate = useNavigate();
   useEffect(() => {
     axios.get("http://localhost:3001/contacts").then((res) => {
       setContactRequests(res.data);

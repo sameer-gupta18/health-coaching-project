@@ -40,7 +40,7 @@ function Contact() {
       description: request,
     };
 
-    await axios
+    await axios //post an object to the array object of contacts in DB
       .post("http://localhost:3001/contacts", contactRequest)
       .then(() => {
         navigate(`/contact-me/confirmation/${convertToFormat(name)}`, {
