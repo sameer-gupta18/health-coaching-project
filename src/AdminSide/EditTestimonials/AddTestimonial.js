@@ -54,9 +54,7 @@ function AddTestimonial() {
             <AdminNavBar />
             <div className="admin-container-body admin-addtestimonial-container">
               <h1>Add Testimonial</h1>
-              <form
-                onSubmit={submitTestimonial}
-              >
+              <form onSubmit={submitTestimonial}>
                 <div className="add-testimonial-input">
                   <p>Name: </p>
                   <input
@@ -129,13 +127,6 @@ function AddTestimonial() {
                     type="file"
                     required
                     accept="image/*"
-                    // onChange={(e) => {
-                    //   setTestimonial((prevDetails) => ({
-                    //     ...prevDetails,
-                    //     // cover_image: URL.createObjectURL(e.target.files[0]),
-                    //     photo: e.target.files[0],
-                    //   }));
-                    // }}
                     onChange={(e) => {
                       updateFile(e.target.files[0] ?? e.target.files[0]);
                     }}

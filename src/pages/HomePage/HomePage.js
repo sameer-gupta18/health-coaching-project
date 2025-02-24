@@ -50,14 +50,9 @@ function PrevArrowSample(props) {
 }
 
 function HomePage() {
-  //FUNCTION BASED COMPONENTS OFFER ORGANIZATION. DATA, FUNCTIONALITIES, AND GUI ARE SEPERATED, AND THIS CODE IS REUSABLE
-  //Data
   let [webinarData, setWebinarData] = useState();
   let [testimonials, setTestimonials] = useState();
   let navigate = useNavigate();
-
-  //JS functions
-  
   useEffect(() => {
     let webinars = axios.get("http://localhost:3001/webinars");
     webinars.then((res) => {
@@ -68,7 +63,6 @@ function HomePage() {
       setTestimonials(res.data);
     });
   }, []);
-
 
   let convertToRoute = (id) => {
     return `/live-webinars/register/${id.toString()}`;
@@ -90,7 +84,8 @@ function HomePage() {
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
-  return ( //returns GUI
+  return (
+    //returns GUI
     <>
       <div className="home-page">
         <div className="landing-page">
@@ -110,7 +105,7 @@ function HomePage() {
                     <a
                       href="https://www.instagram.com/prakrutibyrama/"
                       target="_blank"
-                      rel='noreferrer'
+                      rel="noreferrer"
                     >
                       <li>
                         <FaInstagram />
@@ -182,10 +177,11 @@ function HomePage() {
             Helping You <span>Thrive</span>
           </h1>
           <div className="client-service-card-container">
-            {services.map((service) => {  //Integration with JS
+            {services.map((service) => {
+              //Integration with JS
               return (
                 <div className="client-service">
-                  <h2>{service.title}</h2> 
+                  <h2>{service.title}</h2>
                   <p>{service.subtitle}</p>
                   <div className="client-service-image">{service.image}</div>
                 </div>
@@ -256,7 +252,8 @@ function HomePage() {
               <h1>Tune In On My Upcoming Webinar!</h1>
               <h2>{webinarData.name}</h2>
               <p className="webinar-banner-content-date-time">
-                {convertDate(webinarData.date,2)} | {convertTime(webinarData.time)}
+                {convertDate(webinarData.date, 2)} |{" "}
+                {convertTime(webinarData.time)}
               </p>
               <p className="webinar-banner-content-description">
                 {webinarData.description}

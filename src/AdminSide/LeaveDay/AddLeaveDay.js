@@ -71,7 +71,7 @@ function AddLeaveDay() {
 
   let deleteOffday = async (targetId) => {
     setOffdays(offdays.filter((offday) => offday.id !== targetId));
-    await axios.delete(`http://localhost:3001/offdays/${targetId}`)
+    await axios.delete(`http://localhost:3001/offdays/${targetId}`);
   };
   return (
     <>

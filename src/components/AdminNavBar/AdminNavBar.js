@@ -62,16 +62,6 @@ function AdminNavBar() {
               View Webinars
             </Link>
           </li>
-          {/* <li>
-            <Link
-              to=""
-              className={
-                location.pathname === "/admin/blog-control" ? "active-link" : ""
-              }
-            >
-              Control Blogs
-            </Link>
-          </li> */}
           <li>
             <Link
               to="/admin/leave-day/add"

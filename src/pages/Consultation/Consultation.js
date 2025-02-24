@@ -17,66 +17,34 @@ function Consultation() {
   let [email, setEmail] = useState("");
   let [age, setAge] = useState("");
   let [date, setDate] = useState("");
-  let [time, setTime] = useState('');
+  let [time, setTime] = useState("");
   let [description, setDescription] = useState("");
   let [timeList, setTimeList] = useState();
   let [usedTimes, setUsedTimes] = useState();
   let [dateSpecificTimes, setDateSpecificTimes] = useState();
   let [offdays, setOffDays] = useState();
-  // const [selected, getSelectedDate] = useState(null);
   let navigate = useNavigate();
 
-  // useEffect(() => {
-
-  //   let getValues = async () => {
-  //     await axios.get("http://localhost:3001/consultations").then((res) => {
-  //       setUsedTimes(
-  //         res.data.map((resData) => ({
-  //           aptDate: resData.apt_date,
-  //           aptTime: resData.apt_time,
-  //         }))
-  //       );
-  //     });
-  //   };
-  //   getValues();
-
-  //   setDateSpecificTimes(
-  //     usedTimes
-  //       ? usedTimes
-  //           .filter((usedTime) => {
-  //             return usedTime.aptDate === date;
-  //           })
-  //           .map((usedTime) => usedTime.aptTime)
-  //       : []
-  //   );
-  //   setTimeList(
-  //     usedTimes
-  //       ? times.filter((time) => {
-  //           return !dateSpecificTimes.includes(time);
-  //         })
-  //       : times
-  //   );
-  // }, [date]);
   useEffect(() => {
     let getValues = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/consultations"); //runs this command asynchronously to the rest of the function
-        setUsedTimes( 
+        const res = await axios.get("http://localhost:3001/consultations");
+        setUsedTimes(
           res.data.map((resData) => ({
             aptDate: resData.apt_date,
             aptTime: resData.apt_time,
           }))
         );
-        const res1 = await axios.get("http://localhost:3001/offdays"); //runs this command asynchronously to the rest of the function
+        const res1 = await axios.get("http://localhost:3001/offdays");
         setOffDays(res1.data.map((resData) => resData.date));
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
     getValues();
-  }, []); 
+  }, []);
 
-  useEffect(() => { //runs in the background constantly
+  useEffect(() => {
     if (usedTimes === undefined) {
       return;
     }
@@ -99,13 +67,8 @@ function Consultation() {
     if (time === "" && timeList) {
       setTime(timeList[0]);
     }
-    return; //returning null avoids data leaks
+    return;
   });
-  // console.log(date)
-  // console.log("Times", times);
-  // console.log("Date Specific Times", dateSpecificTimes);
-  // console.log("Time List", timeList);
-
   let convertToFormat = (string) => {
     return string.toLowerCase().trim().replace(" ", "-");
   };
@@ -213,7 +176,7 @@ function Consultation() {
             <form onSubmit={submitContactFormData}>
               <div className="text-input">
                 <input
-                  type="text" 
+                  type="text"
                   placeholder="Enter Your Name"
                   required //prevent unfilled input
                   maxLength={30} //no extreme data

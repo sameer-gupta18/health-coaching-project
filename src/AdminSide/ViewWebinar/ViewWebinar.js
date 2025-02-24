@@ -135,7 +135,8 @@ function ViewWebinar() {
                               {webinar.participants.length !== 0 ? (
                                 <>
                                   <div className="view-webinar-participants">
-                                    {webinar.participants.map((participant) => { //displaying webinar participants
+                                    {webinar.participants.map((participant) => {
+                                      //displaying webinar participants
                                       return (
                                         <>
                                           <div className="view-webinar-participant">
@@ -173,7 +174,11 @@ function ViewWebinar() {
                               ) : null}
                               {webinar.tags.offline ? null : (
                                 <>
-                                  <a href={webinar.link} target="_blank" rel='noreferrer'>
+                                  <a
+                                    href={webinar.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
                                     Join Webinar Now
                                   </a>
                                 </>

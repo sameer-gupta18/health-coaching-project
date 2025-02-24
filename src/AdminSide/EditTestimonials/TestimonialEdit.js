@@ -126,13 +126,6 @@ function TestimonialEdit() {
                   <input
                     type="file"
                     accept="image/*"
-                    // onChange={(e) => {
-                    //   setTestimonial((prevDetails) => ({
-                    //     ...prevDetails,
-                    //     // cover_image: URL.createObjectURL(e.target.files[0]),
-                    //     photo: e.target.files[0],
-                    //   }));
-                    // }}
                     onChange={(e) => {
                       updateFile(e.target.files[0] ?? e.target.files[0]);
                     }}

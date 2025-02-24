@@ -68,14 +68,6 @@ function AddWebinar() {
       );
 
       let fileURL = response.data.url;
-      // setCurrentWebinarDetails((prevDetails) => ({
-      //   ...prevDetails,
-      //   register_timestamp: `${convertToTime(today.getDate())}/${convertToTime(
-      //     today.getMonth() + 1
-      //   )}/${today.getFullYear()} | ${convertToTime(
-      //     today.getHours()
-      //   )}:${convertToTime(today.getMinutes())}`,
-      // }));
 
       let updatedWebinarDetails = {
         ...currentWebinarDetails,
@@ -184,12 +176,15 @@ function AddWebinar() {
                       placeholderText="YYYY-MM-DD"
                     />
                     <p>Add Time of Webinar</p>
-                    <select required onChange={(e) => {
+                    <select
+                      required
+                      onChange={(e) => {
                         setCurrentWebinarDetails((prevDetails) => ({
                           ...prevDetails,
                           time: e.target.value,
                         }));
-                      }}>
+                      }}
+                    >
                       <option disabled>Select Time</option>
                       {times.map((time) => {
                         return (

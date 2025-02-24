@@ -26,7 +26,7 @@ function CalorieTracker() {
     t_fiber: 0,
     t_iron: 0,
   });
-  let [max_per_page,setMaxPerPage] = useState(20);
+  let [max_per_page, setMaxPerPage] = useState(20);
   let [max_pagenum, set_max_pagenum] = useState(
     Math.ceil(filteredNutritionData.length / max_per_page)
   );
@@ -36,22 +36,7 @@ function CalorieTracker() {
   useEffect(() => {
     set_max_pagenum(Math.ceil(filteredNutritionData.length / max_per_page));
     setPageNum(1);
-    // console.log(currentMealStats)
   }, [filteredNutritionData]);
-  // let updateCurrentMealStats = async () => {
-  //   setCurrentMealStats({
-  //     no_of_items: 0,
-  //     t_calories: 0,
-  //     t_serving: 0,
-  //     t_carbs: 0,
-  //     t_protein: 0,
-  //     t_sugars: 0,
-  //     t_fats: 0,
-  //     t_fiber: 0,
-  //     t_iron: 0,
-  //   });
-  //   // console.log(currentMeal.length)
-  // };
 
   let checkCurrentMeal = (id) => {
     for (let j = 0; j < currentMeal.length; j++) {
@@ -61,44 +46,8 @@ function CalorieTracker() {
     }
     return false;
   };
-  // useEffect(() => {
-  //   updateCurrentMealStats();
-  //   // for (let i = 0; i < currentMeal.length; i++) {
-  // setCurrentMealStats({
-  //   no_of_items: currentMealStats.no_of_items + 1,
-  //   t_calories: currentMealStats.t_calories + currentMeal[i].calories,
-  //   t_serving: currentMealStats.t_serving + currentMeal[i].user_serving,
-  //   t_carbs: currentMealStats.t_carbs + currentMeal[i].carbs,
-  //   t_protein: currentMealStats.t_protein + currentMeal[i].protein,
-  //   t_sugars: currentMealStats.t_sugars + currentMeal[i].sugars,
-  //   t_fats: currentMealStats.t_fats + currentMeal[i].fats,
-  //   t_fiber: currentMealStats.t_fiber + currentMeal[i].fiber,
-  //   t_iron: currentMealStats.t_iron + currentMeal[i].iron,
-  // });
-  //   currentMeal.forEach((obj) => {
-  //     setCurrentMealStats({
-  //       no_of_items: currentMealStats.no_of_items + 1,
-  //       t_calories: currentMealStats.t_calories + obj.calories,
-  //       t_serving: currentMealStats.t_serving + obj.user_serving,
-  //       t_carbs: currentMealStats.t_carbs + obj.carbs,
-  //       t_protein: currentMealStats.t_protein + obj.protein,
-  //       t_sugars: currentMealStats.t_sugars + obj.sugars,
-  //       t_fats: currentMealStats.t_fats + obj.fats,
-  //       t_fiber: currentMealStats.t_fiber + obj.fiber,
-  //       t_iron: currentMealStats.t_iron + obj.iron,
-  //     });
-  //   });
-  //   console.log(currentMeal);
-  //   console.log(currentMealStats);
-  // }, [currentMeal]);
+
   let addMeal = (fooditem) => {
-    // setServingSizes([
-    //   ...servingSizes,
-    //   {
-    //     id: fooditem.id,
-    //     user_serving: fooditem.servingsize,
-    //   },
-    // ]);
     setCurrentMeal([
       ...currentMeal,
       {
@@ -148,7 +97,7 @@ function CalorieTracker() {
   };
 
   let removeMeal = (fooditem) => {
-    setCurrentMeal(currentMeal.filter((item) => item.id !== fooditem.id)); //remove food food items that arent the target food item
+    setCurrentMeal(currentMeal.filter((item) => item.id !== fooditem.id));
     setCurrentMealStats({
       no_of_items: currentMealStats.no_of_items - 1,
       t_calories: currentMealStats.t_calories - fooditem.calories,
@@ -203,30 +152,6 @@ function CalorieTracker() {
       alert("There are no items added to the meal yet");
     }
   };
-  // let updateServingSize = (text, fooditem_id) => {
-  //   setServingSizes(
-  //     servingSizes.filter((servingSize) => fooditem_id !== servingSize.id)
-  //   );
-  //   setServingSizes([
-  //     ...servingSizes,
-  //     {
-  //       id: fooditem_id,
-  //       user_serving: parseInt(text),
-  //     },
-  //   ]);
-  // };
-
-  // useEffect(() => {
-  //   setTotalFoodAmount(
-  //     currentMealStats.t_carbs +
-  //       currentMealStats.t_fats +
-  //       currentMealStats.t_fiber +
-  //       currentMealStats.t_iron / 1000 +
-  //       currentMealStats.t_protein +
-  //       currentMealStats.t_sugars
-  //   );
-  //   console.log(totalFoodAmount)
-  // }, [currentMealStats]);
 
   return (
     <>
@@ -237,7 +162,7 @@ function CalorieTracker() {
           <div className="meal-container-container">
             <div className="meal-container">
               {currentMeal.length !== 0 ? (
-                currentMeal.map((mealItem) => { //displaying current Meal in calorie tracker
+                currentMeal.map((mealItem) => {
                   return (
                     <>
                       <div className="meal-item">
@@ -251,13 +176,7 @@ function CalorieTracker() {
                           </p>
                           <div className="meal-item-serving-size">
                             <p>Serving Size:</p>
-                            <input
-                              type="number"
-                              defaultValue={100}
-                              // onChange={(e) => {
-                              //   updateServingSize(e.target.value, mealItem.id);
-                              // }}
-                            />
+                            <input type="number" defaultValue={100} />
                             <p className="meal-unit">g</p>
                           </div>
                         </div>
@@ -536,7 +455,7 @@ function CalorieTracker() {
           <div className="food-items-container">
             {filteredNutritionData.length > 0 ? (
               filteredNutritionData
-                .slice( //show 20 food items depending on the page number
+                .slice(
                   (pagenum - 1) * max_per_page,
                   (pagenum - 1) * max_per_page + (max_per_page - 1)
                 )

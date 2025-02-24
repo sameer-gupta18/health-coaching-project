@@ -64,22 +64,6 @@ function Dashboard() {
   useEffect(() => {
     checkConsultations();
   }, [consultations]);
-  // checkConsultations()
-  // const sendMessage = async (consultation) => {
-  //   try {
-  //     await axios.post("http://localhost:5000/send-sms", {
-  //       phoneNumber: remove0s(consultation.phone_no),
-  //       name: consultation.name,
-  //     });
-  //     // const updatedConsultations = consultations.map((item) =>
-  //     //   item.id === consultation.id ? { ...item, confirmed: true } : item
-  //     // );
-  //     // setConsultations(updatedConsultations);
-  //     //have to update using axios first
-  //   } catch (error) {
-  //     console.log("Error in sending the message");
-  //   }
-  // };
 
   let deleteConsultation = async (targetId) => {
     try {
@@ -126,9 +110,7 @@ function Dashboard() {
         consultation.id === targetId ? updatedConsultation : consultation
       )
     );
-
   };
-
 
   let editConsultation = (targetConsultation) => {
     navigate(`/admin/consultation/edit/${targetConsultation.id}`, {
@@ -264,20 +246,6 @@ function Dashboard() {
                                   ? "Confirmed"
                                   : "Confirm"}
                               </button>
-                              {/* <button
-                                disabled={
-                                  (consultation.google_calender &&
-                                    !consultation.confirmed) ||
-                                  consultation.passed
-                                }
-                                onClick={() => {
-                                  addToCalender(consultation);
-                                }}
-                              >
-                                {consultation.google_calender
-                                  ? "Added to Google Calender"
-                                  : "Add to Google Calender"}
-                              </button> */}
                             </div>
                           </div>
                           <div className="buttons-admin-consultations">

@@ -14,7 +14,6 @@ import convertDate from "../../common_functions/convertDate";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function ConsultationEdit() {
- 
   let [currentConsultation, setCurrentConsultation] = useState({
     name: consultation.name,
     age: consultation.age,
@@ -54,7 +53,7 @@ function ConsultationEdit() {
       });
       const res1 = await axios.get("http://localhost:3001/offdays");
       setOffDays(res1.data.map((resData) => resData.date));
-    } catch (error) { //will not crash system on error, but will handle it using catch()
+    } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
@@ -64,10 +63,6 @@ function ConsultationEdit() {
   }, []);
 
   useEffect(() => {
-    // if (usedTimes === undefined) {
-    //   return;
-    // }
-
     const newDateSpecificTimes = usedTimes
       ? usedTimes
           .filter(
@@ -84,10 +79,6 @@ function ConsultationEdit() {
 
     return;
   }, [currentConsultation.apt_date, usedTimes, times]);
-
-  // console.log("Times", times);
-  // console.log("Date Specific Times", dateSpecificTimes);
-  // console.log("Time List", timeList);
 
   function convertToTime(string) {
     return string < 10 ? `0${string.toString()}` : string.toString();
@@ -119,7 +110,7 @@ function ConsultationEdit() {
       )}/${today.getFullYear()} | ${convertToTime(
         today.getHours()
       )}:${convertToTime(today.getMinutes())}`,
-      passed:consultation.passed
+      passed: consultation.passed,
     };
     await axios.put(
       `http://localhost:3001/consultations/${consultation.id}`,
@@ -143,7 +134,7 @@ function ConsultationEdit() {
   };
   let handleDateChange = (inputDate) => {
     const formattedDate = inputDate.toISOString().split("T")[0];
-    setCurrentConsultation((prevConsultation) => ({   
+    setCurrentConsultation((prevConsultation) => ({
       ...prevConsultation,
       apt_date: formattedDate,
     }));
@@ -151,15 +142,15 @@ function ConsultationEdit() {
   let access = verifyMAC();
   let state = useLocation();
   let consultation = state ? state.state.targetConsultation : null;
-  //   console.log(consultation);
+
   return (
     <>
-      {access === null ? ( 
+      {access === null ? (
         <>
           <NavMargin />
-          <p>Verifying Security...</p> 
+          <p>Verifying Security...</p>
         </>
-      ) : access && consultation ? ( //until access and consultation data is not loaded properly, the consultation cant be edited
+      ) : access && consultation ? (
         <>
           <NavMargin />
           <div className="admin-container">
@@ -245,18 +236,7 @@ function ConsultationEdit() {
 
                   <div className="edit-consultation-input-container">
                     <p>Appointment Date:</p>
-                    {/* <input
-                      type="date"
-                      required
-                      defaultValue={consultation.apt_date}
-                      onChange={(res) => {
-                        setCurrentConsultation((prevConsultation) => ({
-                          ...prevConsultation,
-                          apt_date: res.target.value,
-                        }));
-                      }}
-                      min={getMinDate()}
-                    /> */}
+
                     <DatePicker
                       selected={
                         currentConsultation.apt_date
@@ -298,7 +278,7 @@ function ConsultationEdit() {
 
                       {timeList
                         ? timeList.map((time) => {
-                            return (   
+                            return (
                               <>
                                 <option key={time} value={time}>
                                   {convertTime(time)}

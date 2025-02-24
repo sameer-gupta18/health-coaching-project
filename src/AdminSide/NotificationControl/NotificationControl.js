@@ -35,7 +35,6 @@ function NotificationControl() {
         options.includes(res.data[0].route) ? res.data[0].route : "other"
       );
       setActualRoute(res.data[0].route);
-      // setRouteStatus(!options.includes(res.data[0].route));
     });
   }, []);
   useEffect(() => {

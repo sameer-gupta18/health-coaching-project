@@ -13,7 +13,7 @@ import convertDate from "../../common_functions/convertDate";
 function LiveWebinars() {
   const navigate = useNavigate();
   let [webinarData, setWebinarData] = useState([]);
-  useEffect(async() => { //get data from the DB
+  useEffect(async() => { 
     let webinars = await axios.get("http://localhost:3001/webinars");
     webinars.then((res) => {
       setWebinarData(res.data);

@@ -1,16 +1,13 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import NavMargin from "../../components/NavMargin";
 import { useLocation, useNavigate } from "react-router-dom";
 import {} from "./webinarregistration.css";
 import axios from "axios";
 import Header from "../../components/Header/Header";
-import { Resend } from "resend";
-import Email from "./Email";
 import Footer from "../../components/Footer/Footer";
 import convertDate from "../../common_functions/convertDate";
 import convertTime from "../../common_functions/convertTime";
 function WebinarRegistration() {
-  
   let navigate = useNavigate();
   let [userName, setUserName] = useState();
   let [userEmail, setUserEmail] = useState();
@@ -19,7 +16,7 @@ function WebinarRegistration() {
   let [disable, setDisabled] = useState(false);
 
   let { state } = useLocation();
-  const webinar = state ? state.webinar : null; //extracts webinar send from live webinars in state and stores it in this variable
+  const webinar = state ? state.webinar : null;
   let convertToFormat = (string) => {
     return string.toLowerCase().trim().replace(" ", "-");
   };
@@ -27,15 +24,6 @@ function WebinarRegistration() {
   function convertToTime(string) {
     return string < 10 ? `0${string.toString()}` : string.toString();
   }
-  // const resend = new Resend("re_123456789");
-  // // let sendEmail = async (emailId) => {
-  // //   const data = await resend.emails.send({
-  // //     from: "prakrutibyrama@noreply.com",
-  // //     to: emailId,
-  // //     subject: `${webinar.name} | ${userName} - Confirmation`,
-  // //     react: <Email webinar={webinar} participantName={userName} />,
-  // //   });
-  // // };
   let registerParticipant = async (event) => {
     event.preventDefault();
     const today = new Date();
@@ -60,11 +48,9 @@ function WebinarRegistration() {
       participants: updatedParticipants,
     };
 
-    await axios //only runs the put command when the previous code blocks from line 40-61 have been run
+    await axios
       .put(`http://localhost:3001/webinars/${webinar.id}`, updatedWebinar)
       .then(() => {
-        // console.log("Participant added successfully:", response.data);
-        // sendEmail(userEmail);
         navigate(
           `/live-webinars/register/${webinar.id}/confirmation/${convertToFormat(
             userName

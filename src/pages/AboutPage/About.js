@@ -3,7 +3,6 @@ import NavMargin from "../../components/NavMargin";
 import {} from "./about.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import dummyimage from "../../assets/bg-dummy.avif";
 import aboutme from "../../assets/about_me.jpg";
 import qual1 from "../../assets/17126824425018875866315374612835.png";
 import qual2 from "../../assets/Certificate-of-Rama-Gupta-for-Introduction-To-Translational-Nutrigenetics-on-28-08-2024-22-22-PM.jpg";

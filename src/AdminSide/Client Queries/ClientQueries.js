@@ -20,22 +20,6 @@ function ClientQueries() {
     });
   }, []);
 
-  // const sendMessage = async (contactrequest) => {
-  //   try {
-  //     await axios.post("http://localhost:5000/send-sms", {
-  //       phoneNumber: remove0s(contactrequest.phone_no),
-  //       name: contactrequest.name,
-  //     });
-  //     // const updatedContactRequests = contactRequests.map((item) =>
-  //     //   item.id === contactrequest.id ? { ...item, confirmed: true } : item
-  //     // );
-  //     // setContactRequests(updatedContactRequests);
-  //     //have to update using axios first
-  //   } catch (error) {
-  //     console.log("Error in sending the message");
-  //   }
-  // };
-
   let deleteContactRequest = async (targetId) => {
     try {
       await axios.delete(`http://localhost:3001/contacts/${targetId}`);

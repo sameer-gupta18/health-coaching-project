@@ -39,11 +39,6 @@ function Navbar() {
                 Live Webinars
               </Link>
             </li>
-            {/* <li>
-              <Link to="/blogs" className="nav-item-underlined">
-                Blogs
-              </Link>
-            </li> */}
             <li>
             <Link to="/bmi-calculator" className="nav-item-underlined">
                 BMI Calculator

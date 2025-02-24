@@ -32,28 +32,6 @@ import EditTestimonials from "../AdminSide/EditTestimonials/EditTestimonials";
 import AddTestimonial from "../AdminSide/EditTestimonials/AddTestimonial";
 import TestimonialEdit from "../AdminSide/EditTestimonials/TestimonialEdit";
 function AppWrapper() {
-  // let [innerHeight, setInnerHeight] = useState(window.innerHeight);
-  // window.addEventListener("resize", () => {
-  //   setInnerHeight(window.innerHeight);
-  // });
-  // var container_style = {
-  //   width: "100vw",
-  //   display: "flex",
-  //   flexDirection: "column",
-  // };
-  // var app_style = {
-  //   width: "100vw",
-  //   overflowX: "hidden",
-  //   maxWidth: innerHeight * (16 / 9),
-  //   minWidth: "85vw",
-  //   margin:'0px auto'
-  // };
-  // const express = require('express')
-  // const router=express.Router()
-
-  // router.put(`http://localhost:3001/webinars/:id`,(req,res,next)=>{
-
-  // })
   const [isLoaded, setIsLoaded] = useState(false);
   const location = useLocation();
   useEffect(() => {

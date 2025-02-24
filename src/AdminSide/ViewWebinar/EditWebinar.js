@@ -40,7 +40,8 @@ function EditWebinar() {
   let handleUploadChange = async (file) => {
     let formData = new FormData();
     formData.append("file", file);
-    let response = await axios.post("http://localhost:5000/upload", formData, { //accessing external servers through axios
+    let response = await axios.post("http://localhost:5000/upload", formData, {
+      //accessing external servers through axios
       headers: { "Content-Type": "multipart/form-data" },
     });
 
@@ -64,7 +65,8 @@ function EditWebinar() {
           today.getHours()
         )}:${convertToTime(today.getMinutes())}`,
       };
-      await axios.put( //edit an object at the targetId 
+      await axios.put(
+        //edit an object at the targetId
         `http://localhost:3001/webinars/${webinar.id}`,
         updatedWebinarDetails
       );

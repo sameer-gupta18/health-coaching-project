@@ -7,7 +7,6 @@ const app = express();
 const PORT = 5000;
 app.use(cors());
 app.use(express.json());
-// const serviceAccount = require("./dauntlessfooddelivery-54fe0d4108c8.json");
 const multer = require("multer");
 
 app.use("/upload", express.static(path.join(__dirname, "upload")));
@@ -20,14 +19,13 @@ function getMacAddress() {
   for (let key in networkInterfaces) {
     for (let iface of networkInterfaces[key]) {
       if (!iface.internal && iface.mac !== "00:00:00:00:00:00") {
-        macAddresses.push(iface.mac.toUpperCase()); // Ensure consistent formatting
+        macAddresses.push(iface.mac.toUpperCase());
       }
     }
   }
   return macAddresses;
 }
 
-// Default route for root path
 app.get("/", (req, res) => {
   res.send("Server is running! Use /check-mac to verify MAC address.");
 });
@@ -36,7 +34,6 @@ function checkMacs(computerMac, whiteListedMac) {
   return computerMac.some((element) => whiteListedMac.includes(element));
 }
 
-// MAC address verification route
 app.get("/check-mac", (req, res) => {
   const systemMACs = getMacAddress();
   const isValidMAC = checkMacs(systemMACs, whitelistedMac);
