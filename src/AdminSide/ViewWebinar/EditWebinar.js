@@ -39,15 +39,14 @@ function EditWebinar() {
 
   let handleUploadChange = async (file) => {
     let formData = new FormData();
-    formData.append("file", file);
-    let response = await axios.post("http://localhost:5000/upload", formData, {
-      //accessing external servers through axios
+    formData.append("file", file);            //store the input as a form 
+    let response = await axios.post("http://localhost:5000/upload", formData, {       //post this form on the upload server, where the server extracts the file and stroes it as a url
       headers: { "Content-Type": "multipart/form-data" },
     });
 
-    let fileURL = response.data.url;
+    let fileURL = response.data.url;                                                  //get the URL 
 
-    setCurrentWebinarDetails((prevDetails) => ({
+    setCurrentWebinarDetails((prevDetails) => ({                                      //store the URL in a local state
       ...prevDetails,
       cover_image: fileURL,
     }));
@@ -65,8 +64,7 @@ function EditWebinar() {
           today.getHours()
         )}:${convertToTime(today.getMinutes())}`,
       };
-      await axios.put(
-        //edit an object at the targetId
+      await axios.put(            //edit an object at the targetId
         `http://localhost:3001/webinars/${webinar.id}`,
         updatedWebinarDetails
       );

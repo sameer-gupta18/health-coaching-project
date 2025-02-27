@@ -49,11 +49,11 @@ function PrevArrowSample(props) {
   );
 }
 
-function HomePage() {
+function HomePage() {     //Page is stored inside a function
   let [webinarData, setWebinarData] = useState();
   let [testimonials, setTestimonials] = useState();
   let navigate = useNavigate();
-  useEffect(() => {
+  useEffect(() => {       //Functions can be called inside the parent function
     let webinars = axios.get("http://localhost:3001/webinars");
     webinars.then((res) => {
       setWebinarData(res.data[res.data.length - 1]);
@@ -84,16 +84,15 @@ function HomePage() {
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
-  return (
-    //returns GUI
+  return (                              //returns frontend of the webpage
     <>
-      <div className="home-page">
+      <div className="home-page">       {/** Containers for different parts of the webpage */}
         <div className="landing-page">
           <div className="landing-page-content">
             <NavMargin />
             <div className="landing-page-content-active">
               <div className="landing-text-container">
-                <h3>Hi, I'm Rama! Your</h3>
+                <h3>Hi, I'm Rama! Your</h3>  {/**Tags like <p>, <h1>, <a>, etc used to create on-screen elements */}
                 <h1>Health Coach</h1>
                 <p>
                   I'm a CERTIFIED Health Coach from the prestigious Institute of

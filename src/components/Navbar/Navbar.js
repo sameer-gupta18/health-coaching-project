@@ -18,10 +18,10 @@ function Navbar() {
     <>
       <div className="navbar-container" style={navbar_style}>
         <div className="navbar">
-          <ul>
+          <ul>                                                                    {/** Arranging all the routing links in a list */}
             <li>
-              <Link to="/" className="navbar-logo-container">
-                <img src={logo} alt="Prakruti Logo" className='navbar-logo'/>
+              <Link to="/" className="navbar-logo-container">                     {/**Link element that routes to '/' upon clicking */}
+                <img src={logo} alt="Prakruti Logo" className='navbar-logo'/>     {/** Visual element inside the link */}
               </Link>
             </li>
             <li>
@@ -30,7 +30,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="nav-item-underlined">
+              <Link to="/about-us" className="nav-item-underlined">               {/**Link that routes to /about-us */}
                 About Me
               </Link>
             </li>

@@ -41,7 +41,7 @@ function Contact() {
     };
 
     await axios 
-      .post("http://localhost:3001/contacts", contactRequest)
+      .post("http://localhost:3001/contacts", contactRequest)       //posts/adds an object to the array object of contacts in the DB
       .then(() => {
         navigate(`/contact-me/confirmation/${convertToFormat(name)}`, {
           state: { contactRequest },
@@ -53,7 +53,7 @@ function Contact() {
           state: { contactRequest, error },
         });
       });
-    await axios
+    await axios                                                     //asynchronously adds an accompnaying notification after adding the data in the contact array object
       .post("http://localhost:3001/notifications", {
         time_stamp: `${convertTime(today.getDate())}/${convertTime(
           today.getMonth() + 1

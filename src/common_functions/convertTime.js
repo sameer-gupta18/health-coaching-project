@@ -1,4 +1,4 @@
-let convertTime = (time) => {
+let convertTime = (time) => {           //converts 24hr clock into 12 hr clock, which is more readable
   let hours = parseInt(time[0]) * 10 + parseInt(time[1]);
   let suffix = "";
   if (hours < 12) {

@@ -28,14 +28,14 @@ function Consultation() {
   useEffect(() => {
     let getValues = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/consultations");
+        const res = await axios.get("http://localhost:3001/consultations");   //retrieves data from DB asynchronously
         setUsedTimes(
           res.data.map((resData) => ({
             aptDate: resData.apt_date,
             aptTime: resData.apt_time,
           }))
         );
-        const res1 = await axios.get("http://localhost:3001/offdays");
+        const res1 = await axios.get("http://localhost:3001/offdays");    //recieves data from DB asynchronously
         setOffDays(res1.data.map((resData) => resData.date));
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -114,7 +114,7 @@ function Consultation() {
           state: { consultationRequest, error },
         });
       });
-    await axios.post("http://localhost:3001/notifications", {
+    await axios.post("http://localhost:3001/notifications", {                       //add to notifications as well
       time_stamp: `${convertToTime(today.getDate())}/${convertToTime(
         today.getMonth() + 1
       )}/${today.getFullYear()} | ${convertToTime(
@@ -134,16 +134,16 @@ function Consultation() {
     return tomorrow.toISOString().split("T")[0];
   };
   const isWeekday = (date) => {
-    const day = date.getDay();
+    const day = date.getDay();      //gets todays day as an integer
     if (day === 0 || day === 6) {
-      return false;
-    }
-    const todayFormat = new Date(date);
+      return false;                 //if its a weekend, then return false, indicating the date is to be hidden
+    } 
+    const todayFormat = new Date(date);       //todays date formatted
     todayFormat.setDate(date.getDate() + 1);
-    if (offdays.includes(todayFormat.toISOString().split("T")[0])) {
-      return false;
-    }
-    return true;
+    if (offdays.includes(todayFormat.toISOString().split("T")[0])) {      //see if todays date is included int he offdays dates
+      return false;                                                       //return false if yes
+    }                                                                 
+    return true;                                                          //true if no
   };
 
   let handleDateChange = (inputDate) => {

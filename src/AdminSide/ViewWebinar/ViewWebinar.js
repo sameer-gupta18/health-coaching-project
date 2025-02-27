@@ -20,7 +20,7 @@ function ViewWebinar() {
   let [webinars, setWebinars] = useState();
   let navigate = useNavigate();
   useEffect(() => {
-    axios.get("http://localhost:3001/webinars").then((res) => {
+    axios.get("http://localhost:3001/webinars").then((res) => {       //get data from the DB
       setWebinars(res.data);
     });
   }, []);

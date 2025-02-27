@@ -89,11 +89,11 @@ function CalorieTracker() {
       ? setFilteredNutritionData(
           nutritionData.filter((food) => {
             return food.foodname
-              .toLowerCase()
-              .includes(searchInput.toLowerCase());
+              .toLowerCase()                           //ensures capitalization doesnt impact search results
+              .includes(searchInput.toLowerCase());    //filters out objects which have a substring that matches the search input.
           })
         )
-      : setFilteredNutritionData(nutritionData);
+      : setFilteredNutritionData(nutritionData);       //Handling abnormal data
   };
 
   let removeMeal = (fooditem) => {
@@ -125,31 +125,31 @@ function CalorieTracker() {
   let exportToCsv = () => {
     if (currentMeal.length > 0) {
       const csvRows = [];
-      const headers = Object.keys(currentMeal[0]).join(",");
-      csvRows.push(headers);
+      const headers = Object.keys(currentMeal[0]).join(",");          //creates a row for all parameter keys (acting as the table headings)
+      csvRows.push(headers);                                          //push this row as the first row
 
-      currentMeal.forEach((row) => {
+      currentMeal.forEach((row) => {                                  //loop over each object in the array object
         let values = Object.values(row)
-          .map((value) => `"${value}"`)
+          .map((value) => `"${value}"`)                               //map all the values in the object and join with a comma
           .join(",");
-        csvRows.push(values);
+        csvRows.push(values);                                         //immediately push into csvRows
       });
 
-      csvRows.push(Object.keys(currentMealStats).join(","));
+      csvRows.push(Object.keys(currentMealStats).join(","));          //add additional rows for meal statistics
       csvRows.push(Object.values(currentMealStats).join(","));
-      const csvString = csvRows.join("\n");
-      const blob = new Blob([csvString], { type: "text/csv" });
+      const csvString = csvRows.join("\n");                           //combine all the rows, joining them with a line break
+      const blob = new Blob([csvString], { type: "text/csv" });       //create a new blob (object) file with the csv rows
 
-      const url = URL.createObjectURL(blob);
+      const url = URL.createObjectURL(blob);                          //this blob is created and is converted into an element
       const a = document.createElement("a");
       a.href = url;
       const today = new Date();
-      a.download = `currentMeal-${today.toISOString()}.csv`;
-      a.click();
+      a.download = `currentMeal-${today.toISOString()}.csv`;          //dynamic file naming
+      a.click();                                                      //simulate clikcing the link leading to download
 
       URL.revokeObjectURL(url);
     } else {
-      alert("There are no items added to the meal yet");
+      alert("There are no items added to the meal yet");              //error handling
     }
   };
 
@@ -162,7 +162,7 @@ function CalorieTracker() {
           <div className="meal-container-container">
             <div className="meal-container">
               {currentMeal.length !== 0 ? (
-                currentMeal.map((mealItem) => {
+                currentMeal.map((mealItem) => {         //loops over currentMeal array object, storing each iteration's object in the mealItem object
                   return (
                     <>
                       <div className="meal-item">
@@ -345,7 +345,7 @@ function CalorieTracker() {
               </div>
               <div className="meal-summary-pie-chart-container">
                 {currentMeal.length === 0 ? (
-                  <VictoryPie
+                  <VictoryPie                     
                     labels={() => null}
                     data={[
                       {
@@ -385,7 +385,7 @@ function CalorieTracker() {
                     innerRadius={60}
                   />
                 ) : (
-                  <VictoryPie
+                  <VictoryPie                   
                     labels={() => null}
                     data={[
                       {
@@ -455,7 +455,7 @@ function CalorieTracker() {
           <div className="food-items-container">
             {filteredNutritionData.length > 0 ? (
               filteredNutritionData
-                .slice(
+                .slice(               //splits food items based on page number. I.e: for page #1, index range would be 0-19, for Pg.2, it would be 20-39, etc. 
                   (pagenum - 1) * max_per_page,
                   (pagenum - 1) * max_per_page + (max_per_page - 1)
                 )
@@ -566,7 +566,7 @@ function CalorieTracker() {
           <div className="food-items-container-buttons">
             <a
               onClick={() => {
-                pagenum > 1 ? setPageNum(pagenum - 1) : setPageNum(pagenum);
+                pagenum > 1 ? setPageNum(pagenum - 1) : setPageNum(pagenum);          //decreases page number given it is a posiitve integer
               }}
             >
               <MdOutlineKeyboardArrowLeft />
@@ -576,7 +576,7 @@ function CalorieTracker() {
             </p>
             <a
               onClick={() => {
-                pagenum < max_pagenum
+                pagenum < max_pagenum                                               //increases page number given that its lesser than the max number of pages
                   ? setPageNum(pagenum + 1)
                   : setPageNum(pagenum);
               }}

@@ -15,8 +15,9 @@ function WebinarRegistration() {
   let [userDescription, setUserDescription] = useState();
   let [disable, setDisabled] = useState(false);
 
-  let { state } = useLocation();
-  const webinar = state ? state.webinar : null;
+  let { state } = useLocation();    //extracts webinar object state from LiveWebinars
+  const webinar = state ? state.webinar : null;     //stores the webinar here
+
   let convertToFormat = (string) => {
     return string.toLowerCase().trim().replace(" ", "-");
   };
@@ -48,6 +49,8 @@ function WebinarRegistration() {
       participants: updatedParticipants,
     };
 
+    //First updates the webinars DB
+
     await axios
       .put(`http://localhost:3001/webinars/${webinar.id}`, updatedWebinar)
       .then(() => {
@@ -64,6 +67,9 @@ function WebinarRegistration() {
           state: { updatedWebinar, error },
         });
       });
+
+    //Then updates the notifications column (procedural thinking)
+
     await axios
       .post("http://localhost:3001/notifications", {
         time_stamp: `${convertToTime(today.getDate())}/${convertToTime(
@@ -108,7 +114,7 @@ function WebinarRegistration() {
                       required
                       maxLength={50}
                       onChange={(e) => {
-                        setUserName(e.target.value); //how states are set/updated
+                        setUserName(e.target.value); //updates the value of the state in real-time with form input
                       }}
                       disabled={disable}
                     />

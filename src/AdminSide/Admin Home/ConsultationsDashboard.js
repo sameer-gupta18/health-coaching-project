@@ -69,7 +69,7 @@ function Dashboard() {
     try {
       await axios.delete(`http://localhost:3001/consultations/${targetId}`);
       setConsultations(
-        consultations.filter((consultation) => consultation.id !== targetId)
+        consultations.filter((consultation) => consultation.id !== targetId)      //removes the consultations which dont have the same id as the targetId, ultimately narrowing it down to one.
       );
     } catch (error) {
       console.log("Error deleting deleting item");

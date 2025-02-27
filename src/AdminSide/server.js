@@ -13,11 +13,11 @@ app.use("/upload", express.static(path.join(__dirname, "upload")));
 const upload = multer({ dest: "upload/" });
 
 function getMacAddress() {
-  const networkInterfaces = os.networkInterfaces();
+  const networkInterfaces = os.networkInterfaces();         //retrieves system MAC address
   const macAddresses = [];
 
   for (let key in networkInterfaces) {
-    for (let iface of networkInterfaces[key]) {
+    for (let iface of networkInterfaces[key]) {           //stores the MAC adresses in a desired format in macAddresses
       if (!iface.internal && iface.mac !== "00:00:00:00:00:00") {
         macAddresses.push(iface.mac.toUpperCase());
       }
@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 function checkMacs(computerMac, whiteListedMac) {
-  return computerMac.some((element) => whiteListedMac.includes(element));
+  return computerMac.some((element) => whiteListedMac.includes(element));           //returns boolean for whether macAddress is in the whitelister MACs
 }
 
 app.get("/check-mac", (req, res) => {
@@ -46,11 +46,11 @@ app.get("/check-mac", (req, res) => {
 });
 
 app.post("/upload", upload.single("file"), (req, res) => {
-  const file = req.file;
+  const file = req.file;      //access the file parameter from the input
 
   const fileURL = `${req.protocol}://${req.get("host")}/upload/${
     file.filename
-  }`;
+  }`;                         //generate URL for the file
   res.status(200).json({ url: fileURL });
 });
 

@@ -7,7 +7,6 @@ import AdminNavBar from "../../components/AdminNavBar/AdminNavBar";
 import NotificationColumn from "../../components/NotificationColumn/NotificationColumn";
 import axios from "axios";
 import convertDate from "../../common_functions/convertDate";
-import convertTime from "../../common_functions/convertTime";
 import {} from "./clientqueries.css";
 import { IoMdDownload } from "react-icons/io";
 

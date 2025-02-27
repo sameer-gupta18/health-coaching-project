@@ -14,6 +14,11 @@ import convertDate from "../../common_functions/convertDate";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function ConsultationEdit() {
+  //Consultation Edit
+
+  let access = verifyMAC(); //stores the boolean value determining if access has been granted or not
+  let state = useLocation(); //Dynamic routing (gets the consultation from the admin dashboard)
+  let consultation = state ? state.state.targetConsultation : null;
   let [currentConsultation, setCurrentConsultation] = useState({
     name: consultation.name,
     age: consultation.age,
@@ -48,7 +53,7 @@ function ConsultationEdit() {
           res.data.map((resData) => ({
             aptDate: resData.apt_date,
             aptTime: resData.apt_time,
-          }))
+          }))                                               //extracts and stores the appointments' date and time in a state
         );
       });
       const res1 = await axios.get("http://localhost:3001/offdays");
@@ -68,13 +73,13 @@ function ConsultationEdit() {
           .filter(
             (usedTime) => usedTime.aptDate === currentConsultation.apt_date
           )
-          .map((usedTime) => usedTime.aptTime)
+          .map((usedTime) => usedTime.aptTime)                           //find all the consultations which have the same date as the current consultation, and store their timings in an array
       : [];
 
     setDateSpecificTimes(newDateSpecificTimes);
     const newTimeList = dateSpecificTimes
       ? times.filter((time) => !newDateSpecificTimes.includes(time))
-      : times;
+      : times;                                                   //from a full list of timings, remove all the times stored in the array before, using this list as the time list to be displayed
     setTimeList(newTimeList);
 
     return;
@@ -139,18 +144,15 @@ function ConsultationEdit() {
       apt_date: formattedDate,
     }));
   };
-  let access = verifyMAC();
-  let state = useLocation();
-  let consultation = state ? state.state.targetConsultation : null;
 
   return (
     <>
-      {access === null ? (
+      {access === null ? ( //access is still getting approved
         <>
           <NavMargin />
           <p>Verifying Security...</p>
         </>
-      ) : access && consultation ? (
+      ) : access && consultation ? ( //only if access is granted and the consultation has been fetched will the components load
         <>
           <NavMargin />
           <div className="admin-container">
@@ -167,8 +169,9 @@ function ConsultationEdit() {
                       defaultValue={consultation.name}
                       onChange={(res) => {
                         setCurrentConsultation((prevConsultation) => ({
+                          //changes the consultation state
                           ...prevConsultation,
-                          name: res.target.value,
+                          name: res.target.value, //update a singular parameter in objects
                         }));
                       }}
                     />
@@ -312,6 +315,7 @@ function ConsultationEdit() {
           </div>
         </>
       ) : (
+        //else, an error will be thrown
         <>
           <Error404 />
         </>

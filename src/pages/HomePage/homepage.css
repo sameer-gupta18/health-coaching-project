@@ -1,17 +1,9 @@
-.landing-page {
+.landing-page {   /*Styling done by calling CSS Class Identifier*/
   height: 105vh;
   width: 100vw;
   overflow: hidden;
 }
-.video-background {
-  background: var(--background-three);
-}
-.video-background video {
-  width: 100vw;
-  height: 105vh;
-  object-fit: cover;
-  opacity: 0.2;
-}
+
 .landing-page-content {
   z-index: 1;
   position: absolute;
@@ -49,6 +41,15 @@
   color: var(--accent);
   /* box-shadow: 0px 0px 5px var(--secondary-five); */
   scale: 1.01;
+}
+.video-background {
+  background: var(--background-three);
+}
+.video-background video {
+  width: 100vw;
+  height: 105vh;
+  object-fit: cover;
+  opacity: 0.2;
 }
 .landing-photo {
   width:35vw;

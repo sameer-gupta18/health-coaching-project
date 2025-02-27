@@ -51,7 +51,7 @@ function NotificationControl() {
     }
   };
 
-  let disableNotification = async (e) => {
+  let disableNotification = async (e) => {                  //remove the popup notification from the user-side
     e.preventDefault();
     await axios.put(
       `http://localhost:3001/consumer-notifications/${notification[0].id}`,
@@ -60,9 +60,9 @@ function NotificationControl() {
         route: "",
       }
     );
-    window.location.reload();
+    window.location.reload();                               //reload the page
   };
-  let disableRoute = async (e) => {
+  let disableRoute = async (e) => {                         //disable the routing aspect of the notification
     e.preventDefault();
     await axios.put(
       `http://localhost:3001/consumer-notifications/${notification[0].id}`,
@@ -71,7 +71,7 @@ function NotificationControl() {
         route: "",
       }
     );
-    window.location.reload();
+    window.location.reload();                               //reload the page
   };
   let submitNotificationEditData = async (e) => {
     e.preventDefault();
@@ -164,7 +164,7 @@ function NotificationControl() {
                       value={"Disable Route"}
                       onClick={disableRoute}
                     />
-                    {inputRoute === "other" ? (
+                    {inputRoute === "other" ? (     //if in the <select>, the "other" option is selected, this textbox is displayed
                       <>
                         <input
                           type="text"

@@ -112,14 +112,14 @@ function KnowYourBody() {
         ? height / 39.37
         : heightUnit === "cm"
         ? height / 100
-        : height / 3.281;
-    let weightfinal = weightUnit === "kgs" ? weight : weight / 2.205;
-    setBmiNum((weightfinal / heightfinal ** 2).toFixed(1));
-    setGenerated(true);
+        : height / 3.281;                                                     //stores the height in metres
+    let weightfinal = weightUnit === "kgs" ? weight : weight / 2.205;         //stores the weight in kilograms
+    setBmiNum((weightfinal / heightfinal ** 2).toFixed(1));                   //BMI formula + rounding
+    setGenerated(true);                                                       //BMI generated flag activated
   };
 
   return (
-    <>
+    <>s
       <NavMargin />
       <div className="know-your-body-container">
         <Header title={"BMI Calculator"} />

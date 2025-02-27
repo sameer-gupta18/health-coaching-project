@@ -13,24 +13,25 @@ import convertDate from "../../common_functions/convertDate";
 function LiveWebinars() {
   const navigate = useNavigate();
   let [webinarData, setWebinarData] = useState([]);
-  useEffect(async() => { 
-    let webinars = await axios.get("http://localhost:3001/webinars");
-    webinars.then((res) => {
+  useEffect(() => { 
+     axios.get("http://localhost:3001/webinars").then((res) => {
       setWebinarData(res.data);
     });
   }, []);
-  let convertToRoute = (id) => {
+
+  // <Route path="/live-webinars/register/:webinarid" element={<WebinarRegistration />}/>
+  let convertToRoute = (id) => {                        //outputs the formatted route using the webinar id and route
     return `/live-webinars/register/${id.toString()}`;
   };
   let handleRegister = (webinar) => {
-    navigate(convertToRoute(webinar.id), { state: { webinar } });
+    navigate(convertToRoute(webinar.id), { state: { webinar } });   //passes the webinar object as a state to registration
   };
 
   return (
     <>
       <NavMargin />
       <div className="live-webinars-container">
-        <Header title={"Upcoming Webinars"} />
+        <Header title={"Upcoming Webinars"} />        {/**Passes the title as the parameter */}
         <div className="webinars-container">
           {webinarData.length === 0 ? (
             <>

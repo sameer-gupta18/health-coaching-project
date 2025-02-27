@@ -1,6 +1,6 @@
 let convertDate = (date, form) => {
   //form 1 is 09/12/2024 | 22:51 and form two is 2025-05-05
-  let day, year, month, day_suffix;
+  let day, year, month, day_suffix;               //variable initialization
   let months = [
     "January",
     "February",
@@ -15,7 +15,7 @@ let convertDate = (date, form) => {
     "November",
     "December",
   ];
-  if (form === 1) {
+  if (form === 1) {                                     
     day = date[0] + date[1];
 
     month = months[parseInt(date[3] + date[4]) - 1];
@@ -25,7 +25,7 @@ let convertDate = (date, form) => {
     month = months[parseInt(date[5] + date[6]) - 1];
     day = date[8] + date[9];
   }
-  if (day[0] !== "1") {
+  if (day[0] !== "1") {                         //converting input strings into formatted time stamps and dates
     if (day[1] === "1") {
       day_suffix = "st";
     } else if (day[1] === "2") {

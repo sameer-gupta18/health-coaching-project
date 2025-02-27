@@ -52,15 +52,17 @@ function AppWrapper() {
 
   return isLoaded ? (
     <>
-      <Navbar />
-      {!location.pathname.startsWith("/admin") ? ( //admin routing
+      <Navbar />                                          {/** Displays Navbar in all webpages */}
+      {!location.pathname.startsWith("/admin") ? (        //admin routing
         <>
-          <NotificationPopup />
+          <NotificationPopup />                           {/* Doesn't show popup on admin side webpages */}
         </>
       ) : null}
-      <ScrollToTop />
-        <Routes>
-        <Route path="/" element={<HomePage />} /> {/*Routing of a few pages*/}
+      <ScrollToTop />                                     {/** Scrolls to top of webpage upon routing to a new page */}
+        <Routes>                                          {/**Container for all routes */}
+        {/*Routing of a few pages*/}
+
+        <Route path="/" element={<HomePage />} />         
         <Route path="/about-us" element={<About />} />
         <Route path="/bmi-calculator" element={<KnowYourBody />} />
         <Route path="/live-webinars" element={<LiveWebinars />} />
@@ -85,6 +87,9 @@ function AppWrapper() {
           path="/consultation/success/:name"
           element={<ConsultationConfirmation />}
         />
+
+        {/**Some more Routes for different webpages */}
+        
         <Route path="/consultation/fail/:name" element={<ConsultationFail />} />
         <Route path="/contact-me/fail/:name" element={<ContactFail />} />
         {/* <Route path="/blogs" element={<Blogs />} /> */}
@@ -110,7 +115,7 @@ function AppWrapper() {
           path="/admin/testimonials/edit/:id"
           element={<TestimonialEdit />}
         />
-        <Route path="*" element={<Error404 />} />
+        <Route path="*" element={<Error404 />} />       {/**Enterring an incorrect route will route the user to an error page */}
       </Routes>
     </>
   ) : (
