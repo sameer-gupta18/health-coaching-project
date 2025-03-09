@@ -73,13 +73,15 @@ function ConsultationEdit() {
           .filter(
             (usedTime) => usedTime.aptDate === currentConsultation.apt_date
           )
-          .map((usedTime) => usedTime.aptTime)                           //find all the consultations which have the same date as the current consultation, and store their timings in an array
+          .map((usedTime) => usedTime.aptTime)                           //find all the consultations which have the same date 
+                                                                        // as the current consultation, and store their timings in an array
       : [];
 
     setDateSpecificTimes(newDateSpecificTimes);
     const newTimeList = dateSpecificTimes
       ? times.filter((time) => !newDateSpecificTimes.includes(time))
-      : times;                                                   //from a full list of timings, remove all the times stored in the array before, using this list as the time list to be displayed
+      : times;                                                   //from a full list of timings, remove all the times stored in 
+                                                                //the array before, using this list as the time list to be displayed
     setTimeList(newTimeList);
 
     return;

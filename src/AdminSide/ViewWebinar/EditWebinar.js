@@ -40,7 +40,8 @@ function EditWebinar() {
   let handleUploadChange = async (file) => {
     let formData = new FormData();
     formData.append("file", file);            //store the input as a form 
-    let response = await axios.post("http://localhost:5000/upload", formData, {       //post this form on the upload server, where the server extracts the file and stroes it as a url
+    let response = await axios.post("http://localhost:5000/upload", formData, {       //post this form on the upload server, where 
+                                                                                      // the server extracts the file and stroes it as a url
       headers: { "Content-Type": "multipart/form-data" },
     });
 

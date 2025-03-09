@@ -455,7 +455,8 @@ function CalorieTracker() {
           <div className="food-items-container">
             {filteredNutritionData.length > 0 ? (
               filteredNutritionData
-                .slice(               //splits food items based on page number. I.e: for page #1, index range would be 0-19, for Pg.2, it would be 20-39, etc. 
+                .slice(               //splits food items based on page number. I.e: 
+                                      // for page #1, index range would be 0-19, for Pg.2, it would be 20-39, etc. 
                   (pagenum - 1) * max_per_page,
                   (pagenum - 1) * max_per_page + (max_per_page - 1)
                 )
@@ -566,7 +567,7 @@ function CalorieTracker() {
           <div className="food-items-container-buttons">
             <a
               onClick={() => {
-                pagenum > 1 ? setPageNum(pagenum - 1) : setPageNum(pagenum);          //decreases page number given it is a posiitve integer
+                pagenum > 1 ? setPageNum(pagenum - 1) : setPageNum(pagenum);  //decreases page number given it is a posiitve integer
               }}
             >
               <MdOutlineKeyboardArrowLeft />
@@ -576,7 +577,7 @@ function CalorieTracker() {
             </p>
             <a
               onClick={() => {
-                pagenum < max_pagenum                                               //increases page number given that its lesser than the max number of pages
+                pagenum < max_pagenum                     //increases page number given that its lesser than the max number of pages
                   ? setPageNum(pagenum + 1)
                   : setPageNum(pagenum);
               }}

@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../components/Footer/Footer";
 import BlendVector from "../../components/BlendVector/BlendVector";
-import coverphoto1 from "../../assets/momimage1.JPG";
+import coverphoto1 from "../../assets/clientimage1.JPG";
 import coverphoto2 from "../../assets/IMG_2193-removebg-preview.png";
 import convertDate from "../../common_functions/convertDate";
 import convertTime from "../../common_functions/convertTime";
