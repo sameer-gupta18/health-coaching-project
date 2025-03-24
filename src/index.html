@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Coaching Management System</title>
+  </head>
+  <body
+    style="
+      background: rgb(233, 233, 197);
+      text-align: center;
+      font-family: Arial;
+    "
+  >
+    <h1>Health Coaching Management System - Loading Instructions</h1>
+    <h4>
+      Since I am working with various databases and a REACT website, in order to
+      load it, certain steps need to be followed. These steps are as follows:
+    </h4>
+    <h2>Step 1</h2>
+    <p>
+      Open the product folder in an IDE (preferably Visual Studio Code). Note:
+      the IDE should have a terminal. The IDE screen should look something like
+      this:
+    </p>
+    <img src="/src/assets/img1.jpg" height="400px" />
+    <h2>Step 2</h2>
+    <p>Now the database will be hosted on a local HTTP server.</p>
+    <p>Firstly open a new terminal</p>
+    <img src="/src/assets/img2.jpg" height="250px" />
+    <p>
+      Then in the terminal, enter the folder where the data is stored. Do so by
+      typing <b>"cd src/data"</b> in the terminal and running the command
+    </p>
+    <img src="/src/assets/img3.jpg" height="150px" />
+    <p>
+      The database will be hosted using the json-server package. Ensure that you
+      have the json-server package installed by typing
+      <b>"npm install json-server"</b>. <br />After the installation has
+      completed, host the database by typing the command
+      <b>"npx json-server datastore.json --port 3001"</b>
+    </p>
+    <img src="/src/assets/img4.jpg" height="400px" />
+    <h2>Step 3</h2>
+    <p>
+      Next, the security and upload server has to be hosted on a local HTTP
+      server as well.
+    </p>
+    <p>
+      Open a new terminal. <br />
+      *ENSURE THAT THE EXISTING TERMINAL WITH THE DATABASE HOSTING KEEPS
+      RUNNING*
+    </p>
+    <img src="/src/assets/img5.jpg" height="200px" />
+    <p>
+      On this new terminal, enter the AdminSide folder by typing the command
+      <b>"cd src/AdminSide"</b>
+    </p>
+    <img src="/src/assets/img6.jpg" height="40px" />
+    <p>
+      Now, run the security/upload server by typing <b>"node server.js"</b> into
+      the terminal
+    </p>
+    <img src="/src/assets/img7.jpg" height="120px" />
+    <p>
+      Note: the MAC check has been disabled for the purpose of demonstration,
+      yet its evidence can be found in the source code
+    </p>
+    <h2>Step 4</h2>
+    <p>Finally, run the website</p>
+    <p>Open a new terminal and type <b>"npm run start"</b>. Wait for a few moments till npm builds the website environment. After a while the website should accessible at https://localhost:3000.</p>
+    <img src="/src/assets/img8.jpg" height="200px" />
+    <hr/>
+    <p>In case there is an error in running the website on the system, ensure that node package manager (npm) is updated to the latest version.</p>
+  </body>
+</html>
